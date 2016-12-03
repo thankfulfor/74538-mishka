@@ -3,10 +3,138 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <div class="header">
+      <div class="header__logo"></div>
+      <div class="menu">
+        <div class="menu__icon"></div>
+        <ul class="menu__items">
+          <li class="menu__item">
+            <a class="menu__link" href="" title="Каталог товаров">Каталог товаров</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="" title="Вязание на заказ">Вязание на заказ</a>
+          </li>
+          <li class="menu__item">
+            <span class="menu__itemIcon"></span>
+            <a class="menu__link" href="" title="Поиск по сайту">Поиск по сайту</a>
+          </li>
+          <li class="menu__item">
+            <span class="menu__itemIcon"></span>
+            <a class="menu__link" href="" title="Корзина: пока пуста">Корзина: пока пуста</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
+    <div class="explain">
+      <div class="explain__text">Милые штуки ручной работы для&nbsp;дома</div>
+      <div class="explain__background"></div>
+    </div>
+
+    <div class="navMenu navMenu--interior">
+      <div class="navMenu__text">Предметы интерьера</div>
+      <div class="navMenu__icon navMenu__icon--interior"></div>
+    </div>
+
+    <div class="navMenu navMenu--toys">
+      <div class="navMenu__text">Детские игрушки</div>
+      <div class="navMenu__icon navMenu__icon--toys"></div>
+    </div>
+
+    <div class="itemOfWeek">
+      <div class="itemOfWeek__header">Вязаные корзинки</div>
+      <div class="itemOfWeek__subheader">Товар недели</div>
+      <p class="itemOfWeek__text">Экологически чистая пряжа, ручная работа. Доступны в&nbsp;шести расцветках, и&nbsp;трех размерах.</p>
+      <table class="itemOfWeek__table">
+        <tr class="itemOfWeek__row">
+          <td class="itemOfWeek__colorHeader">Цвет</td>
+          <td class="itemOfWeek__colorValue">&laquo;Тиффани&raquo;/серый</td>
+        </tr>
+        <tr class="itemOfWeek__row">
+          <td class="itemOfWeek__DiameterHeader">Диаметр</td>
+          <td class="itemOfWeek__DiameterValue">25 см</td>
+        </tr>
+        <tr class="itemOfWeek__row">
+          <td class="itemOfWeek__HeightHeader">Высота</td>
+          <td class="itemOfWeek__HeightValue">15 см</td>
+        </tr>
+      </table>
+      <img class="itemOfWeek__image" src="http://placehold.it/260x315" alt="Вязаные корзинки" height="260" width="315">
+      <div class="itemOfWeek__price">Цена: 990 руб.</div>
+      <a class="button" title="Заказать" href="">Заказать</a>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="aboutUs">
+      <div class="aboutUs__header">Коротко о&nbsp;нас:</div>
+      <ul class="aboutUs__list">
+        <li class="aboutUs__item">
+          <div class="aboutUs__icon aboutUs__icon--eco"></div>
+          <div class="aboutUs__text">Экологически чистые материалы</div>
+        </li>
+        <li class="aboutUs__item">
+          <div class="aboutUs__icon aboutUs__icon--style"></div>
+          <div class="aboutUs__text">Скандинавский стиль по&nbsp;российской цене</div>
+        </li>
+        <li class="aboutUs__item">
+          <div class="aboutUs__icon aboutUs__icon--likes"></div>
+          <div class="aboutUs__text">Увеличивает лайки на&nbsp;фотографиях</div>
+        </li>
+        <li class="aboutUs__item">
+          <div class="aboutUs__icon aboutUs__icon--with-love"></div>
+          <div class="aboutUs__text">Связано вручную с&nbsp;любовью и&nbsp;умилением</div>
+        </li>
+        <li class="aboutUs__item">
+          <div class="aboutUs__icon aboutUs__icon--domestic"></div>
+          <div class="aboutUs__text">Поддержка отечественного производителя</div>
+        </li>
+        <li class="aboutUs__item">
+          <div class="aboutUs__icon aboutUs__icon--gift"></div>
+          <div class="aboutUs__text">Поставляется в&nbsp;подарочной упаковке</div>
+        </li>
+      </ul>
+    </div>
+    <div class="reviews">
+      <div class="review">
+        <div class="review__header"></div>
+        <div class="review__text">
+          Я&nbsp;молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков.
+        </div>
+        <div class="review__author">Анастасия Красильникова</div>
+        <div class="review__authorAka">@misssssiskras</div>
+      </div>
+      <div class="reviews__prev"></div>
+      <div class="reviews__next"></div>
+      <a class="button button--write" href="" title="Написать">Написать</a>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="contacts">
+      <div class="contacts__header">Контакты</div>
+      <div class="contacts__email">e-mail</div>
+      <a class="contacts__emailValue" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+      <div class="contacts__address">адрес</div>
+      <div class="contacts__addressValue">г.&nbsp;Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8, офис&nbsp;101</div>
+      <img class="contacts__map" alt="Карта" src="http://placehold.it/768x457" height="768" width="457">
+    </div>
+
+    <div class="writeUs">Напишите нам</div>
+
+    <div class="socials">
+      <a title="Инстаграмм" class="socials_insta" href="">Инстаграмм</a>
+      <a title="Facebook" class="socials_fb" href="">Facebook</a>
+      <a title="Twitter" class="socials_twitter" href="">Twitter</a>
+    </div>
+
+    <div class="developedBy">
+      <div class="developedBy__text"></div>
+      <div class="developedBy__icon"></div>
+    </div>
   </body>
 </html>
