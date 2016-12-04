@@ -1,0 +1,9 @@
+.explain {
+	background-color: #fff;
+
+	&_background {
+		background: url('../img/hero-mobile%401x.jpg') no-repeat;
+		height: 373px;
+		width: 575px;
+	}
+}

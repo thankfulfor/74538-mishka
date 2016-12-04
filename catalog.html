@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <div class="header">
       <div class="header__logo"></div>
       <div class="menu">
-        <div class="menu__icon"></div>
+        <div class="menu__icon menu__icon--open"></div>
+        <div class="menu__icon menu__icon--close"></div>
         <ul class="menu__items">
           <li class="menu__item">
             <a class="menu__link" href="" title="Каталог товаров">Каталог товаров</a>
@@ -33,21 +36,21 @@
 
     <ul class="catalog">
       <li class="catalog__item">
-        <img class="catalog__pic" alt="Зайчик-попрыгайчик" src="http://placehold.it/260x195" width="260" height="195">
+        <img class="catalog__pic" alt="Зайчик-попрыгайчик" src="img/photo-1-mobile@1x.jpg" width="260" height="195">
         <div class="catalog__name">Зайчик-попрыгайчик</div>
         <div class="catalog__description">Рост 30 см, вес 200 г</div>
         <div class="catalog__price">1 200 руб.</div>
         <a class="catalog__cart" title="Положить в корзину" href=""></a>
       </li>
       <li class="catalog__item">
-        <img class="catalog__pic" alt="Козринка для белья" src="http://placehold.it/260x195" width="260" height="195">
+        <img class="catalog__pic" alt="Корзинка для белья" src="img/photo-2-mobile@1x.jpg" width="260" height="195">
         <div class="catalog__name">Козринка для белья</div>
         <div class="catalog__description">Диаметр 15 см, высота 10 см</div>
         <div class="catalog__price">690 руб.</div>
         <a class="catalog__cart" title="Положить в корзину" href=""></a>
       </li>
       <li class="catalog__item">
-        <img class="catalog__pic" alt="Большая корзинка для игрушек" src="http://placehold.it/260x195" width="260" height="195">
+        <img class="catalog__pic" alt="Большая корзинка для игрушек" src="img/photo-3-mobile@1x.jpg" width="260" height="195">
         <div class="catalog__name">Большая корзинка для игрушек</div>
         <div class="catalog__description">Диаметр 30 см, высота 30 см</div>
         <div class="catalog__price">1 500 руб.</div>
@@ -56,21 +59,28 @@
     </ul>
 
     <div class="production">
+      <div class="production__ico"></div>
       <div class="production__title">Процесс производства</div>
-      <div class="production__video">По&nbsp;просьбам наших любимых фолловеров мы&nbsp;сняли для вас подробное видео о&nbsp;том, как появляются наши товары.</div>
+      <div class="production__previewPicture">
+        <div class="production__previewPlayIcon"></div>
+      </div>
+      <div class="production__video"></div>
+      По&nbsp;просьбам наших любимых фолловеров мы&nbsp;сняли для вас подробное видео о&nbsp;том, как появляются наши товары.
     </div>
 
     <a class="button button--write" href="" title="Сделать заказ">Сделать заказ</a>
 
     <div class="socials">
-      <a title="Инстаграмм" class="socials_insta" href="">Инстаграмм</a>
-      <a title="Facebook" class="socials_fb" href="">Facebook</a>
-      <a title="Twitter" class="socials_twitter" href="">Twitter</a>
+      <a title="Инстаграмм" class="socials__social socials__social--insta" href="">Инстаграмм</a>
+      <a title="Facebook" class="socials__social socials__social--fb" href="">Facebook</a>
+      <a title="Twitter" class="socials__social socials__social--twitter" href="">Twitter</a>
     </div>
 
     <div class="developedBy">
-      <div class="developedBy__text"></div>
-      <div class="developedBy__icon"></div>
+      <div class="developedBy__text">Разработано</div>
+      <a class="developedBy__link" href="https://htmlacademy.ru/" title="html academy">
+        <span class="developedBy__icon"></span>
+      </a>
     </div>
   </body>
 </html>

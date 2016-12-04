@@ -1,0 +1,11 @@
+.button {
+	background-color: #fff;
+
+	&--buy {
+		background-color: $accent-color;
+	}
+
+	&--writeReview {
+		background-color: $button-link-color;
+	}
+}

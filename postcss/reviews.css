@@ -1,0 +1,17 @@
+.reviews {
+
+	&__arrows {
+
+		background-repeat: no-repeat;
+		height: 26px;
+		width: 50px;
+
+		&--prev {
+			background-image: url('../img/icon-left-arrow.svg');
+		}
+
+		&--next {
+			background-image: url('../img/icon-right-arrow.svg');
+		}
+	}
+}

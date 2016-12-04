@@ -1,0 +1,15 @@
+.menu {
+	background-color: #fff;
+
+	&__icon--open {
+		background: url('../img/icon-menu-open.svg') no-repeat;
+		height: 14px;
+		width: 20px;
+	}
+
+	&__icon--close {
+		background: url('../img/icon-menu-close.svg') no-repeat;
+		height: 21px;
+		width: 21px;
+	}
+}

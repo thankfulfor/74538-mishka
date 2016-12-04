@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <div class="header">
       <div class="header__logo"></div>
       <div class="menu">
-        <div class="menu__ico"></div>
+        <div class="menu__icon menu__icon--open"></div>
+        <div class="menu__icon menu__icon--close"></div>
         <ul class="menu__items">
           <li class="menu__item">
             <a class="menu__link" href="" title="Каталог товаров">Каталог товаров</a>
@@ -18,11 +21,11 @@
             <a class="menu__link" href="" title="Вязание на заказ">Вязание на заказ</a>
           </li>
           <li class="menu__item">
-            <span class="menu__itemIco"></span>
+            <span class="menu__itemIcon"></span>
             <a class="menu__link" href="" title="Поиск по сайту">Поиск по сайту</a>
           </li>
           <li class="menu__item">
-            <span class="menu__itemIco"></span>
+            <span class="menu__itemIcon"></span>
             <a class="menu__link" href="" title="Корзина: пока пуста">Корзина: пока пуста</a>
           </li>
         </ul>
@@ -123,15 +126,16 @@
     </div>
 
     <div class="socials">
-      <a title="Инстаграмм" class="socials_insta" href="">Инстаграмм</a>
-      <a title="Facebook" class="socials_fb" href="">Facebook</a>
-      <a title="Twitter" class="socials_twitter" href="">Twitter</a>
+      <a title="Инстаграмм" class="socials__social socials__social--insta" href="">Инстаграмм</a>
+      <a title="Facebook" class="socials__social socials__social--fb" href="">Facebook</a>
+      <a title="Twitter" class="socials__social socials__social--twitter" href="">Twitter</a>
     </div>
 
     <div class="developedBy">
-      <div class="developedBy__text"></div>
-      <div class="developedBy__icon"></div>
+      <div class="developedBy__text">Разработано</div>
+      <a class="developedBy__link" href="https://htmlacademy.ru/" title="html academy">
+        <span class="developedBy__icon"></span>
+      </a>
     </div>
-
   </body>
 </html>

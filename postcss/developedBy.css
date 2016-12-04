@@ -1,0 +1,10 @@
+.developedBy {
+	background-color: $pad-color;
+
+	&__icon {
+		background: url('../img/logo-htmlacademy.svg') no-repeat;
+		display: inline-block;
+		height: 34px;
+		width: 27px;
+	}
+}

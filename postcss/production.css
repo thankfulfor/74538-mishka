@@ -1,0 +1,20 @@
+.production {
+
+	&__ico {
+		background: url('../img/icon-video.svg') no-repeat;
+		height: 32px;
+		width: 32px;
+	}
+
+	&__previewPicture {
+		background: url('../img/video-mobile@1x.jpg') no-repeat;
+		height: 150px;
+		width: 260px;
+	}
+
+	&__previewPlayIcon {
+		background: url('../img/icon-play.svg') no-repeat;
+		height: 77px;
+		width: 101px;
+	}
+}
