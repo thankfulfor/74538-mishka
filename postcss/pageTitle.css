@@ -1,3 +1,33 @@
 .pageTitle {
-	background-color: $pad-color;
+	color: #000;
+	font-family: "Open Sans", sans-serif;
+	font-size: 27px;
+	font-weight: 700;
+	line-height: 30px;
+	text-align:  center;
+
+	@media all and (min-width: 768px;) {
+		font-size: 45px;
+		line-height: 50px;
+	}
+
+	@media all and (min-width: 1150px;) {
+		font-size: 53px;
+		line-height: 57px;
+	}
+
+	&__background {
+		height: 300px;
+		width: 100%;
+	}
+
+	&__background--image {
+		background: url('/img/hero-mobile%401x.jpg') center no-repeat;
+		background-size: contain;
+	}
+
+	&_background--pad {
+		background-color: $pad-color;
+	}
+
 }
