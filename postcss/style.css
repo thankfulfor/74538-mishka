@@ -1,0 +1,21 @@
+@import "Vars.css";
+@import "Normalize.css";
+
+@import "aboutUs.css";
+@import "button.css";
+@import "catalog.css";
+@import "contacts.css";
+@import "developedBy.css";
+@import "divider.css";
+@import "explain.css";
+@import "form.css";
+@import "header.css";
+@import "itemOfWeek.css";
+@import "menu.css";
+@import "navMenu.css";
+@import "pageTitle.css";
+@import "production.css";
+@import "review.css";
+@import "reviews.css";
+@import "socials.css";
+@import "writeUs.css";

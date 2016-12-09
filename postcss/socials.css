@@ -1,0 +1,26 @@
+.socials {
+	background-color: $pad-color;
+
+	&__social {
+		background-repeat: no-repeat;
+
+		&--insta {
+			background-image: url('../img/icon-insta.svg');
+			height: 20px;
+			width: 21px;
+		}
+
+		&--fb {
+			background-image: url('../img/icon-fb.svg');
+			height: 28px;
+			width: 15px;
+		}
+
+		&--twitter {
+			background-image: url('../img/icon-twitter.svg');
+			height: 20px;
+			width: 23px;
+
+		}
+	}
+}
