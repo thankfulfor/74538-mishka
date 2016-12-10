@@ -1,7 +1,137 @@
 .contacts {
 	background-color: #fff;
+	padding: 40px 30px;
 
-	&_arrow {
+	@media all and (min-width: 1150px) {
+		padding: 120px 0 100px;
+	}
+
+
+	&__header {
+		margin-bottom: 30px;
+
+		@media all and (min-width: 768px) {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		@media all and (min-width: 1150px) {
+			justify-content: inherit;
+		}
+	}
+
+	&__flag {
+		display: none;
+
+		@media all and (min-width: 768px) {
+			background: url('../img/icon-flag.svg') no-repeat;
+			display: block;
+			height: 82px;
+			width: 47px;
+		}
+
+		@media all and (min-width: 1150px) {
+			order: -1;
+			margin-right: 60px;
+			margin-left: 70px;
+		}
+
+	}
+
+	&__content {
+
+		@media all and (min-width: 1150px) {
+			padding-left: 175px;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			height: 455px;
+			justify-content: space-between;
+			width: 100%;
+		}
+
+		@media all and (min-width: 1150px) {
+			height: 270px;
+		}
+	}
+
+	&__table {
+
+		@media all and (min-width: 1150px) {
+			width: 300px;
+		}
+
+		tr {
+
+			@media all and (min-width: 768px) {
+				display: inline-block;
+				width: 280px;
+			}
+			
+		}
+
+	}
+
+	&__name {
+		white-space: nowrap;
+		padding: 20px 30px 20px 0;
+	}
+
+	&__mapContainer {
+		margin: 40px -30px 0 -30px;
+
+		@media all and (min-width: 768px) {
+			height: 460px;
+			overflow: hidden;
+		}
+
+		@media all and (min-width: 1150px) {
+			align-self: flex-end;
+			height: 460px;
+			order: 2;
+			width: 530px;
+			margin: -190px 0 0;
+			flex-shrink: 0;
+		}
+	}
+
+	&__arrow {
 		background-color: #fff;
+		background: url('/img/icon-map-pin.svg') no-repeat;
+		height: 101px;
+		left: 124px;
+		position: absolute;
+		top: 165px;
+		width: 66px;
+
+		@media all and (min-width: 768px) {
+			left: 50%;
+			margin-left: -30px;
+			margin-top: -50px;
+			top: 50%;
+		}
+	}
+
+	&__map {
+
+		@media all and (min-width: 768px) {
+			height: 900px;
+			margin-top: -290px;
+			width: 100%;
+		}
+
+		@media all and (min-width: 1150px) {
+			height: 460px;
+			margin-top: 0;
+			width: 530px;
+		}
+	}
+
+	&__writeUs {
+		margin-top: 40px;
+
+		@media all and (min-width: 1150px) {
+			width: 230px;
+		}
 	}
 }

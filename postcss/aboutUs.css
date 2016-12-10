@@ -1,43 +1,97 @@
 .aboutUs {
 	background-color: #fff;
+	font-weight: 700;
+	padding: 35px 30px;
 
-		&__icon {
+	@media all and (min-width: 768px) {
+		padding: 35px 0;
+	}
+
+	@media all and (min-width: 1150px) {
+		padding: 35px 0 35px 175px;
+	}
+
+	&__list {
+		padding: 0;
+
+		@media all and (min-width: 768px) {
+			align-content: flex-start;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			height: 430px;
+		}
+
+		@media all and (min-width: 1150px) {
+			height: 430px;
+		}
+	}
+
+	&__item {
+		list-style: none;
+		margin-top: 30px;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		@media all and (min-width: 768px) {
+
+			width: 330px;
+			font-size: 20px;
+			padding-right: 35px;
+
+			&:nth-child(4) {
+				margin-top: 0;
+			}
+		}
+
+		@media all and (min-width: 1150px) {
+			padding-right: 55px;
+			width: 355px;
+		}
+
+
+	}
+
+	&__icon {
 		background-repeat: no-repeat;
+		margin-bottom: 20px;
 
-			&--eco {
-				background-image: url('../img/icon-feature-1.svg');
-				height: 37px;
-				width: 32px;
-			}
+		&--eco {
+			background-image: url('../img/icon-feature-1.svg');
+			height: 37px;
+			width: 32px;
+		}
 
-			&--style {
-				background-image: url('../img/icon-feature-3.svg');
-				height: 27px;
-				width: 47px;
-			}
+		&--style {
+			background-image: url('../img/icon-feature-3.svg');
+			height: 27px;
+			width: 47px;
+		}
 
-			&--likes {
-				background-image: url('../img/icon-feature-5.svg');
-				height: 28px;
-				width: 54px;
-			}
+		&--likes {
+			background-image: url('../img/icon-feature-5.svg');
+			height: 28px;
+			width: 54px;
+		}
 
-			&--with-love {
-				background-image: url('../img/icon-feature-2.svg');
-				height: 34px;
-				width: 34px;
-			}
+		&--with-love {
+			background-image: url('../img/icon-feature-2.svg');
+			height: 34px;
+			width: 34px;
+		}
 
-			&--domestic {
-				background-image: url('../img/icon-feature-4.svg');
-				height: 23px;
-				width: 54px;
-			}
+		&--domestic {
+			background-image: url('../img/icon-feature-4.svg');
+			height: 23px;
+			width: 54px;
+		}
 
-			&--gift {
-				background-image: url('../img/icon-feature-6.svg');
-				height: 32px;
-				width: 33px;
-			}
+		&--gift {
+			background-image: url('../img/icon-feature-6.svg');
+			height: 32px;
+			width: 33px;
+		}
 	}
 }

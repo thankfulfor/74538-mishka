@@ -1,0 +1,36 @@
+.footer {
+
+	background-color: $pad-color;
+
+	@media all and (min-width: 768px) {
+		display: flex;
+		padding: 0 45px;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	@media all and (min-width: 1150px) {
+		padding: 0;
+	}
+
+	&__logo {
+
+		@media all and (min-width: 768px) {
+			background: url('../img/logo-mobile.svg') no-repeat;
+			width: 86px;
+			height: 35px;
+			margin-right: 60px;
+		}
+
+	}
+
+	&__line {
+		margin: 0 30px;
+
+		@media all and (min-width: 768px) {
+			display: none;
+		}
+	}
+
+
+}

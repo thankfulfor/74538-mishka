@@ -1,20 +1,109 @@
 .production {
 
-	&__ico {
-		background: url('../img/icon-video.svg') no-repeat;
-		height: 32px;
-		width: 32px;
+	padding: 30px;
+
+	@media all and (min-width: 1150px) {
+		padding: 0;
+		margin-bottom: 105px;
+	}
+
+	&__content {
+		border: 1px solid black;
+		padding: 30px;
+
+		@media all and (min-width: 768px) {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+		}
+
+		@media all and (min-width: 1150px) {
+			height: 455px;
+			padding: 0;
+			align-content: flex-start;
+			justify-content: center;
+		}
+	}
+
+	&__title {
+		display: inline-block;
+		width: 190px;
+		margin-bottom: 30px;
+		padding-left: 50px;
+		position: relative;
+		left: 25px;
+
+		&::before {
+			background: url('../img/icon-video.svg') no-repeat;
+			height: 32px;
+			width: 32px;
+			display: block;
+			margin-left: 32px;
+			content: '';
+			position: absolute;
+			left: -30px;
+			top: 0;
+		}
+
+		@media all and (min-width: 768px) {
+			left: 0;
+			width: 300px;
+
+			&::before {
+				top: -10px;
+			}
+		}
+
+		@media all and (min-width: 1150px) {
+			width: 140px;
+			padding: 40px 0 0;
+
+			&::before {
+				margin-left: 0;
+				top: 0;
+				left: 0;
+			}
+		}
 	}
 
 	&__previewPicture {
 		background: url('../img/video-mobile@1x.jpg') no-repeat;
 		height: 150px;
 		width: 260px;
+		margin: 0 0 30px -32px;
+		display: flex;
+
+		@media all and (min-width: 768px) {
+			width: 608px;
+			height: 455px;
+			background-size: cover;
+			order: -1;
+		}
+
+		@media all and (min-width: 1150px) {
+			width: 685px;
+			margin: 0 80px 0 0;
+		}
 	}
 
 	&__previewPlayIcon {
 		background: url('../img/icon-play.svg') no-repeat;
 		height: 77px;
 		width: 101px;
+		margin: auto;
+	}
+
+	&__text {
+		margin-bottom: 30px;
+	
+		@media all and (min-width: 1150px) {
+			width: 220px;
+		}
+	}
+
+	&__button {
+		@media all and (min-width: 1150px) {
+			width: 230px;
+		}
 	}
 }

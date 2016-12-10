@@ -1,11 +1,16 @@
 .button {
 	background-color: #fff;
+	border: 2px solid $text-color;
+	padding: 10px 0;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: $text-color;
+	text-transform: uppercase;
+	font-weight: 700;
 
 	&--buy {
 		background-color: $accent-color;
 	}
 
-	&--writeReview {
-		background-color: $button-link-color;
-	}
 }

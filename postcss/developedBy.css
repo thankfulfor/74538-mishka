@@ -1,5 +1,13 @@
 .developedBy {
-	background-color: $pad-color;
+	padding: 30px 0;
+	text-align: center;
+
+	&__link {
+		font-weight: 700;
+		vertical-align: middle;
+		display: inline-block;
+		margin-left: 30px;
+	}
 
 	&__icon {
 		background: url('../img/logo-htmlacademy.svg') no-repeat;
