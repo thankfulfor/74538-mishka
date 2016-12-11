@@ -42,7 +42,7 @@
             content: '';
             position: absolute;
             left: -30px;
-            top: 0;
+            top: 0;a
         }
 
         @media all and (min-width: 768px) {
@@ -95,7 +95,7 @@
 
     &__text {
         margin-bottom: 30px;
-    
+
         @media all and (min-width: 1150px) {
             width: 220px;
         }

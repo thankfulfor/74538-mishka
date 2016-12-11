@@ -23,7 +23,7 @@
         @media all and (min-width: 768px) {
             flex-grow: 0;
             width: 335px;
-        
+
             & + & {
                 margin-top: 0;
             }
@@ -33,7 +33,6 @@
             width: 525px;
         }
 
-        
     }
 
     &__icon {
