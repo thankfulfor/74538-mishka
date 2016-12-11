@@ -1,9 +1,9 @@
 .header {
-	background-color: #fff;
+    background-color: #fff;
 
-	&__logo {
-		background: url('../img/logo-mobile.svg') no-repeat;
-		height: 35px;
-		width: 86px;
-	}
+    &__logo {
+        background: url('../img/logo-mobile.svg') no-repeat;
+        height: 35px;
+        width: 86px;
+    }
 }

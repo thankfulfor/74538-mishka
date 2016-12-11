@@ -1,0 +1,60 @@
+/* Colors
+   ================================ */
+
+$accent-color:              #63d1bb;
+
+$text-color:                #444444;
+
+$button-link-color:         #e2d2d3;
+
+$pad-color:                 #f1f1f1;
+
+$input-text-color:          #c7c7c7;
+
+$divider-color:             #e7e7e8;
+
+
+
+/* Typographcs
+   ================================ */
+
+/*Main*/
+$main-font-size-s:          15px;
+$main-line-height-s:        30px;
+
+$main-font-size-m:          17px;
+$main-line-height-m:        30px;
+
+
+/*Title*/
+$title-font-weight:         700;
+
+$title-font-size-s:         27px;
+$title-line-height-s:       30px;
+
+$title-font-size-m:         43px;
+$title-line-height-m:       50px;
+
+$title-font-size-l:         53px;
+$title-line-height-l:       57px;
+
+
+/*Button*/
+$button-font-wight:         700;
+$button-font-size:          17px;
+$button-line-height:        16px;
+
+/*Catalog items*/
+$name-font-weight:          700;
+
+$name-line-height:          24px;
+$name-font-size-s:          17px;
+$name-font-size-m:          20px;
+
+$desciption-line-height:    30px;
+$desciption-font-size-s:    13px;
+$desciption-font-size-m:    15px;
+
+$price-line-height:         24px;
+$price-font-size-s:         15px;
+$price-font-size-m:         17px;
