@@ -1,6 +1,9 @@
-.footer {
+@import 'container.css';
 
+.footer {
+    @mixin center;
     background-color: $pad-color;
+
 
     @media all and (min-width: 768px) {
         display: flex;
@@ -31,6 +34,4 @@
             display: none;
         }
     }
-
-
 }

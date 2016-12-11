@@ -1,14 +1,21 @@
-.contacts {
-    background-color: #fff;
-    padding: 40px 30px;
+@import 'container.css';
 
-    @media all and (min-width: 1150px) {
-        padding: 120px 0 100px;
+.contacts {
+    @mixin center;
+    background-color: #fff;
+    color: $main-color;
+    padding-bottom: 70px;
+
+    @media all and (min-width: 768px) {
+        padding-top: 130px;
+        padding-bottom: 55px;
     }
 
-
     &__header {
+        font-family: "Open-sans", serif;
+        font-weight: 400;
         margin-bottom: 30px;
+
 
         @media all and (min-width: 768px) {
             display: flex;
@@ -77,11 +84,32 @@
         padding: 20px 30px 20px 0;
     }
 
+    &__emailLink {
+        border-bottom: 1px solid $accent-color;
+        color: $main-color;
+        display: inline-block;
+        height: 27px;
+        padding-top: 6px;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+
+        &:active {
+            color: $active-color;
+            border-bottom-color: $active-color;
+        }
+    }
+
     &__mapContainer {
         margin: 40px -30px 0 -30px;
+        position: relative;
 
         @media all and (min-width: 768px) {
             height: 460px;
+            margin: 40px -50px 0 -50px;
             overflow: hidden;
         }
 
@@ -97,7 +125,7 @@
 
     &__arrow {
         background-color: #fff;
-        background: url('/img/icon-map-pin.svg') no-repeat;
+        background: url('../img/icon-map-pin.svg') no-repeat;
         height: 101px;
         left: 124px;
         position: absolute;

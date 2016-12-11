@@ -35,14 +35,14 @@
 
         &::before {
             background: url('../img/icon-video.svg') no-repeat;
-            height: 32px;
-            width: 32px;
-            display: block;
-            margin-left: 32px;
             content: '';
-            position: absolute;
+            display: block;
+            height: 32px;
             left: -30px;
-            top: 0;a
+            margin-left: 32px;
+            position: absolute;
+            top: 0;
+            width: 32px;
         }
 
         @media all and (min-width: 768px) {

@@ -1,11 +1,9 @@
 /* Colors
    ================================ */
 
-$accent-color:              #63d1bb;
+$accent-color:              #62d1ba;
 
-$text-color:                #444444;
-
-$button-link-color:         #e2d2d3;
+$main-color:                #444444;
 
 $pad-color:                 #f1f1f1;
 
@@ -14,6 +12,12 @@ $input-text-color:          #c7c7c7;
 $divider-color:             #e7e7e8;
 
 
+/* Link
+   ================================ */
+
+$hover-color:				$accent-color;	
+
+$active-color:				#d2f0eb;
 
 /* Typographcs
    ================================ */

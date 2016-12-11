@@ -1,14 +1,19 @@
+@import 'container.css';
+
 .aboutUs {
+    @mixin center;
     background-color: #fff;
     font-weight: 700;
-    padding: 35px 30px;
+    padding-bottom: 30px;
+    padding-top: 35px;
 
     @media all and (min-width: 768px) {
-        padding: 35px 0;
+        padding-top: 55px;
+        padding-bottom: 80px;
     }
 
     @media all and (min-width: 1150px) {
-        padding: 35px 0 35px 175px;
+        padding-left: 175px;
     }
 
     &__list {
@@ -17,13 +22,7 @@
         @media all and (min-width: 768px) {
             align-content: flex-start;
             display: flex;
-            flex-direction: column;
             flex-wrap: wrap;
-            height: 430px;
-        }
-
-        @media all and (min-width: 1150px) {
-            height: 430px;
         }
     }
 
@@ -36,10 +35,9 @@
         }
 
         @media all and (min-width: 768px) {
-
-            width: 330px;
             font-size: 20px;
             padding-right: 35px;
+            width: 330px;
 
             &:nth-child(4) {
                 margin-top: 0;
