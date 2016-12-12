@@ -85,12 +85,10 @@
     }
 
     &__text {
-        width: 210px;
-
-        @media all and (min-width: 1150px) {
-            width: 380px;
-        }
-
+        font-family: "Open Sans", serif;
+        font-size: 20px;
+        font-weight: 700;
+        width: 180px;
     }
 
     &__icon {

@@ -19,6 +19,7 @@
 
     @media all and (min-width: 1150px) {
         padding-left: 175px;
+        background-position-x: 50px;
     }
 
     &__header {

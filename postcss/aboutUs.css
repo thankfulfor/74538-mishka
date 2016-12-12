@@ -3,9 +3,9 @@
 .aboutUs {
     @mixin center;
     background-color: #fff;
-    font-weight: 700;
     padding-bottom: 30px;
     padding-top: 35px;
+
 
     @media all and (min-width: 768px) {
         padding-top: 55px;
@@ -16,17 +16,42 @@
         padding-left: 175px;
     }
 
+    &__header {
+        font-family: "Open Sans", serif;
+        font-size: $title-font-size-s;
+        font-weight: $title-font-weight;
+        line-height: $title-line-height-s;
+
+        @media all and (min-width: 768px) {
+          margin-bottom: 50px;
+          font-size: $title-font-size-m;
+          line-height: $title-line-height-m;
+        }
+
+        @media all and (min-width: 1150px) {
+          margin-bottom: 50px;
+          font-size: $title-font-size-l;
+          line-height: $title-line-height-l;
+        }
+    }
+
     &__list {
         padding: 0;
 
         @media all and (min-width: 768px) {
             align-content: flex-start;
             display: flex;
+            flex-direction: column;
             flex-wrap: wrap;
+            max-height: 425px;
         }
     }
 
     &__item {
+        font-family: "Open Sans", serif;
+        font-size: $main-font-size-s;
+        font-weight: $title-font-weight;
+        line-height: auto;
         list-style: none;
         margin-top: 30px;
 
@@ -36,6 +61,7 @@
 
         @media all and (min-width: 768px) {
             font-size: 20px;
+            margin-top: 55px;
             padding-right: 35px;
             width: 330px;
 
@@ -48,7 +74,13 @@
             padding-right: 55px;
             width: 355px;
         }
+    }
 
+    &__text {
+
+      @media all and (min-width: 768px) {
+        width: 300px;
+      }
 
     }
 
