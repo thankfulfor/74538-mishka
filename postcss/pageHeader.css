@@ -1,6 +1,6 @@
 @import 'container.css';
 
-.niceThings {
+.pageHeader {
     @mixin center;
     background-color: #f9f9f9;
 
@@ -8,7 +8,6 @@
         background: url('../img/hero-mobile%401x.jpg') top center no-repeat;
         background-size: cover;
         color: #000;
-        font-family: "Open Sans", serif;
         font-size: 27px;
         font-weight: 700;
         line-height: 30px;
@@ -85,7 +84,6 @@
     }
 
     &__text {
-        font-family: "Open Sans", serif;
         font-size: 20px;
         font-weight: 700;
         width: 180px;
