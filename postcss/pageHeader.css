@@ -1,19 +1,19 @@
 @import 'container.css';
 
 .pageHeader {
-    @mixin center;
-    background-color: #f9f9f9;
+    background-color: #f8f8f8;
+    width: 100%;
+
+    &__content {
+      @mixin center;
+    }
 
     &__top {
         background: url('../img/hero-mobile%401x.jpg') top center no-repeat;
         background-size: cover;
         color: #000;
-        font-size: 27px;
-        font-weight: 700;
-        line-height: 30px;
         padding-bottom: 122px;
         padding-top: 75px;
-        text-align: center;
 
         @media all and (min-width: 768px) {
             padding-top: 150px;
@@ -26,12 +26,11 @@
     }
 
     &__header {
-        font-size: $title-font-size-s;
-        line-height: $title-line-height-s;
+        @mixin title;
+        font-size: 27px;
+        text-align: center;
 
         @media all and (min-width: 768px) {
-            font-size: $title-font-size-m;
-            line-height: $title-line-height-m;
             margin: 0 auto;
             max-width: 668px;
             padding: 0 80px;
@@ -85,7 +84,7 @@
 
     &__text {
         font-size: 20px;
-        font-weight: 700;
+        font-weight: $font-weight-bold;
         width: 180px;
     }
 

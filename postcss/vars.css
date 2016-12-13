@@ -23,6 +23,8 @@ $active-color:              #d2f0eb;
    ================================ */
 
 /*Main*/
+$font-weight-bold:          700;
+
 $main-font-size-s:          15px;
 $main-line-height-s:        30px;
 

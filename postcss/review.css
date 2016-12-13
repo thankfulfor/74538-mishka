@@ -2,54 +2,81 @@
 
 .review {
     @mixin center;
-    padding-top: 30px;
     padding-bottom: 55px;
+    padding-top: 30px;
 
     @media all and (min-width: 768px) {
-        align-items: center;
         background: url('../img/review@1x.jpg') no-repeat;
         background-position-x: -50px;
+        background-size: contain;
         display: flex;
         flex-wrap: wrap;
-        height: 455px;
         justify-content: space-between;
+        padding-top: 80px;
         position: relative;
-        padding-top: 90px;
     }
 
     @media all and (min-width: 1150px) {
-        padding-left: 175px;
         background-position-x: 50px;
+        padding-bottom: 105px;
+        padding-left: 175px;
     }
 
     &__header {
-        font-weight: 700;
+        @mixin title;
+        margin-bottom: 40px;
 
         @media all and (min-width: 768px) {
             order: -2;
+            margin-bottom: 55px;
         }
     }
 
+    &__text {
+        @mixin text;
+
+        @media all and (min-width: 1150px) {
+            max-width: 790px;
+        }
+    }
+
+    &__item {
+        width: 100%;
+    }
+
     &__author {
-        font-weight: 700;
+        font-weight: $font-weight-bold;
+        margin-bottom: 10px;
         margin-top: 40px;
+
+        @media all and (min-width: 768px) {
+            margin-top: 70px;
+        }
+
+        @media all and (min-width: 1150px) {
+            margin-top: 50px;
+        }
     }
 
     &__arrows {
         border-collapse: collapse;
         display: table;
-        margin: 35px 0 40px;
+        margin: 40px 0 40px;
 
         @media all and (min-width: 768px) {
-            bottom: 40px;
+            bottom: 20px;
             position: absolute;
             right: 30px;
             width: 165px;
         }
+
+        @media all and (min-width: 1150px) {
+            bottom: 60px;
+            right: 50px;
+        }
     }
 
     &__arrow {
-
         background-position: center center;
         background-repeat: no-repeat;
         border: 1px solid $pad-color;
@@ -73,7 +100,7 @@
     &__writeButton {
         @media all and (min-width: 768px) {
             order: -1;
-            width: 165px;
+            width: 175px;
         }
     }
 }

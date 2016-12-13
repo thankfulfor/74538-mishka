@@ -17,20 +17,14 @@
     }
 
     &__header {
-        font-size: $title-font-size-s;
-        font-weight: $title-font-weight;
-        line-height: $title-line-height-s;
+        @mixin title;
 
         @media all and (min-width: 768px) {
           margin-bottom: 50px;
-          font-size: $title-font-size-m;
-          line-height: $title-line-height-m;
         }
 
         @media all and (min-width: 1150px) {
           margin-bottom: 50px;
-          font-size: $title-font-size-l;
-          line-height: $title-line-height-l;
         }
     }
 
