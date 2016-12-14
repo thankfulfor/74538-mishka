@@ -4,18 +4,23 @@
     @mixin center;
     background-color: #fff;
     color: $main-color;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
 
     @media all and (min-width: 768px) {
         padding-top: 130px;
         padding-bottom: 55px;
     }
 
+    @media all and (min-width: 1150px) {
+        min-height: 630px;
+        padding-bottom: 100px;
+        position: relative;
+    }
+
     &__header {
         font-family: "Open-sans", serif;
         font-weight: 400;
         margin-bottom: 30px;
-
 
         @media all and (min-width: 768px) {
             display: flex;
@@ -25,6 +30,10 @@
         @media all and (min-width: 1150px) {
             justify-content: inherit;
         }
+    }
+
+    &__title {
+      @mixin title;
     }
 
     &__flag {
@@ -48,49 +57,66 @@
     &__content {
 
         @media all and (min-width: 1150px) {
-            padding-left: 175px;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            height: 455px;
             justify-content: space-between;
-            width: 100%;
-        }
-
-        @media all and (min-width: 1150px) {
-            height: 270px;
+            padding-left: 175px;
+            width: 300px;
         }
     }
 
     &__table {
+        table-layout: fixed;
+        @mixin text;
+        width: 100%;
 
         @media all and (min-width: 1150px) {
-            width: 300px;
+            width: 315px;
         }
 
         tr {
+          @media all and (min-width: 768px) {
+            display: inline-block;
+            width: 50%;
+            padding-right: 35px;
+            vertical-align: top;
+          }
 
-            @media all and (min-width: 768px) {
-                display: inline-block;
-                width: 280px;
-            }
+          @media all and (min-width: 1150px) {
+            display: inherit;
+          }
 
         }
+
+
 
     }
 
     &__name {
-        white-space: nowrap;
-        padding: 20px 30px 20px 0;
+        height: 50px;
+        width: 80px;
+        word-break: break-all;
     }
 
-    &__emailLink {
+    &__value {
+        width: 200px;
+        word-break: break-all;
+
+        @media all and (min-width: 768px) {
+          width: auto;
+        }
+
+    }
+
+    &__emailLink,
+    &__emailLink:visited {
         border-bottom: 1px solid $accent-color;
         color: $main-color;
         display: inline-block;
         height: 27px;
-        padding-top: 6px;
         text-decoration: none;
+        word-break: break-all;
 
         &:hover,
         &:focus {
@@ -104,7 +130,7 @@
     }
 
     &__mapContainer {
-        margin: 40px -30px 0 -30px;
+        margin: 30px -30px 0 -30px;
         position: relative;
 
         @media all and (min-width: 768px) {
@@ -114,12 +140,11 @@
         }
 
         @media all and (min-width: 1150px) {
-            align-self: flex-end;
+            position: absolute;
+            top: 25px;
+            right: 50px;
             height: 460px;
-            order: 2;
             width: 530px;
-            margin: -190px 0 0;
-            flex-shrink: 0;
         }
     }
 
@@ -159,7 +184,9 @@
         margin-top: 40px;
 
         @media all and (min-width: 1150px) {
+            margin-top: 80px;
             width: 230px;
+
         }
     }
 }
