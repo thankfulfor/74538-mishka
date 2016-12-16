@@ -1,7 +1,7 @@
 @import 'container.css';
 
 .aboutUs {
-    @mixin center;
+    /* @mixin center; */
     background-color: #fff;
     padding-bottom: 30px;
     padding-top: 35px;

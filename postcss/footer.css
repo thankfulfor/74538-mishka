@@ -5,7 +5,7 @@
     width: 100%;
 
     &__content {
-      @mixin center;
+      /* @mixin center; */
 
       @media all and (min-width: 768px) {
           align-items: center;

@@ -21,4 +21,22 @@
     &:active {
         color: #7c7c7c;
     }
+
+    &--buy {
+        background-color: $accent-color;
+        border-color: $accent-color;
+        color: #fff;
+
+        &:hover,
+        &:focus {
+            background-color: #79e6cf;
+            border-color: #79e6cf;
+            color: #fff;
+        }
+
+        &:active {
+            background-color: #68d5bf;
+            border-color: #68d5bf;
+        }
+    }
 }
