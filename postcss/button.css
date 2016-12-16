@@ -1,11 +1,42 @@
 .button {
-	background-color: #fff;
+    background-color: #fff;
+    border: 2px solid $main-color;
+    color: $main-color;
+    display: block;
+    font-size: $button-font-size;
+    font-weight: $font-weight-bold;
+    line-height: 25px;
+    height: 50px;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
 
-	&--buy {
-		background-color: $accent-color;
-	}
+    &:hover,
+    &:focus {
+        background-color: $main-color;
+        color: #fff;
+    }
 
-	&--writeReview {
-		background-color: $button-link-color;
-	}
+    &:active {
+        color: #7c7c7c;
+    }
+
+    &--buy {
+        background-color: $accent-color;
+        border-color: $accent-color;
+        color: #fff;
+
+        &:hover,
+        &:focus {
+            background-color: #79e6cf;
+            border-color: #79e6cf;
+            color: #fff;
+        }
+
+        &:active {
+            background-color: #68d5bf;
+            border-color: #68d5bf;
+        }
+    }
 }

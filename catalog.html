@@ -2,87 +2,39 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <title>HTML Academy: Мишка, каталог</title>
+    <link href="css/style.css" rel="stylesheet"
+>    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-
-    <header class="header">
-      <div class="header__logo"></div>
-      <div class="menu">
-        <div class="menu__icon menu__icon--open"></div>
-        <div class="menu__icon menu__icon--close"></div>
-        <ul class="menu__items">
-          <li class="menu__item">
-            <a class="menu__link" href="" title="Каталог товаров">Каталог товаров</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="" title="Вязание на заказ">Вязание на заказ</a>
-          </li>
-          <li class="menu__item">
-            <span class="menu__itemIcon"></span>
-            <a class="menu__link" href="" title="Поиск по сайту">Поиск по сайту</a>
-          </li>
-          <li class="menu__item">
-            <span class="menu__itemIcon"></span>
-            <a class="menu__link" href="" title="Корзина: пока пуста">Корзина: пока пуста</a>
-          </li>
-        </ul>
+    <div class="wrapper">
+      <div class="container">
+        <section class="production">
+          <div class="production__title catalog__title">Процесс производства</div>
+          <div class="production__previewPicture">
+            <div class="production__previewPlayIcon"></div>
+          </div>
+          <div class="production__video"></div>
+          <div class="production__text">По&nbsp;просьбам наших любимых фолловеров мы&nbsp;сняли для вас подробное видео о&nbsp;том, как появляются наши товары.</div>
+          <a class="button production__button" href="" title="Сделать заказ">Сделать заказ</a>
+        </section>
       </div>
-    </header>
-
-    <div class="pageTitle">Каталог товаров</div>
-
-    <ul class="catalog">
-      <li class="catalog__item">
-        <img class="catalog__pic" alt="Зайчик-попрыгайчик" src="img/photo-1-mobile@1x.jpg" width="260" height="195">
-        <div class="catalog__name">Зайчик-попрыгайчик</div>
-        <div class="catalog__description">Рост 30 см, вес 200 г</div>
-        <div class="catalog__price">1 200 руб.</div>
-        <a class="catalog__cart" title="Положить в корзину" href=""></a>
-      </li>
-      <li class="catalog__item">
-        <img class="catalog__pic" alt="Корзинка для белья" src="img/photo-2-mobile@1x.jpg" width="260" height="195">
-        <div class="catalog__name">Козринка для белья</div>
-        <div class="catalog__description">Диаметр 15 см, высота 10 см</div>
-        <div class="catalog__price">690 руб.</div>
-        <a class="catalog__cart" title="Положить в корзину" href=""></a>
-      </li>
-      <li class="catalog__item">
-        <img class="catalog__pic" alt="Большая корзинка для игрушек" src="img/photo-3-mobile@1x.jpg" width="260" height="195">
-        <div class="catalog__name">Большая корзинка для игрушек</div>
-        <div class="catalog__description">Диаметр 30 см, высота 30 см</div>
-        <div class="catalog__price">1 500 руб.</div>
-        <a class="catalog__cart" title="Положить в корзину" href=""></a>
-      </li>
-    </ul>
-
-    <div class="production">
-      <div class="production__ico"></div>
-      <div class="production__title">Процесс производства</div>
-      <div class="production__previewPicture">
-        <div class="production__previewPlayIcon"></div>
-      </div>
-      <div class="production__video"></div>
-      По&nbsp;просьбам наших любимых фолловеров мы&nbsp;сняли для вас подробное видео о&nbsp;том, как появляются наши товары.
+      <footer class="footer">
+        <div class="footer__content container">
+          <div class="footer__logo"></div>
+          <div class="socials">
+            <a title="Инстаграмм" class="socials__social socials__social--insta" href=""></a>
+            <a title="Facebook" class="socials__social socials__social--fb" href=""></a>
+            <a title="Twitter" class="socials__social socials__social--twitter" href=""></a>
+          </div>
+          <div class="developedBy">
+            <a class="developedBy__link" href="https://htmlacademy.ru/" title="html academy">
+              <span class="developedBy__text">Разработано</span>
+              <span class="developedBy__icon"></span>
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
-
-    <a class="button button--write" href="" title="Сделать заказ">Сделать заказ</a>
-
-    <footer>
-      <div class="socials">
-        <a title="Инстаграмм" class="socials__social socials__social--insta" href="">Инстаграмм</a>
-        <a title="Facebook" class="socials__social socials__social--fb" href="">Facebook</a>
-        <a title="Twitter" class="socials__social socials__social--twitter" href="">Twitter</a>
-      </div>
-
-      <div class="developedBy">
-        <div class="developedBy__text">Разработано</div>
-        <a class="developedBy__link" href="https://htmlacademy.ru/" title="html academy">
-          <span class="developedBy__icon"></span>
-        </a>
-      </div>
-    </footer>
   </body>
 </html>

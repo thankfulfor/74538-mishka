@@ -1,43 +1,116 @@
+@import 'container.css';
+
 .aboutUs {
-	background-color: #fff;
+    background-color: #fff;
+    padding-bottom: 30px;
+    padding-top: 35px;
 
-		&__icon {
-		background-repeat: no-repeat;
+    @media all and (min-width: 768px) {
+        padding-top: 55px;
+        padding-bottom: 80px;
+    }
 
-			&--eco {
-				background-image: url('../img/icon-feature-1.svg');
-				height: 37px;
-				width: 32px;
-			}
+    @media all and (min-width: 1150px) {
+        padding-left: 175px;
+    }
 
-			&--style {
-				background-image: url('../img/icon-feature-3.svg');
-				height: 27px;
-				width: 47px;
-			}
+    &__header {
 
-			&--likes {
-				background-image: url('../img/icon-feature-5.svg');
-				height: 28px;
-				width: 54px;
-			}
+        @media all and (min-width: 768px) {
+          margin-bottom: 50px;
+        }
 
-			&--with-love {
-				background-image: url('../img/icon-feature-2.svg');
-				height: 34px;
-				width: 34px;
-			}
+        @media all and (min-width: 1150px) {
+          margin-bottom: 50px;
+        }
+    }
 
-			&--domestic {
-				background-image: url('../img/icon-feature-4.svg');
-				height: 23px;
-				width: 54px;
-			}
+    &__list {
+        padding: 0;
 
-			&--gift {
-				background-image: url('../img/icon-feature-6.svg');
-				height: 32px;
-				width: 33px;
-			}
-	}
+        @media all and (min-width: 768px) {
+            align-content: flex-start;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            max-height: 425px;
+        }
+    }
+
+    &__item {
+        font-size: $main-font-size-s;
+        font-weight: $title-font-weight;
+        line-height: auto;
+        list-style: none;
+        margin-top: 30px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        @media all and (min-width: 768px) {
+            font-size: 20px;
+            margin-top: 55px;
+            padding-right: 35px;
+            width: 330px;
+
+            &:nth-child(4) {
+                margin-top: 0;
+            }
+        }
+
+        @media all and (min-width: 1150px) {
+            padding-right: 55px;
+            width: 355px;
+        }
+    }
+
+    &__text {
+
+      @media all and (min-width: 768px) {
+            width: 300px;
+      }
+
+    }
+
+    &__icon {
+        background-repeat: no-repeat;
+        margin-bottom: 20px;
+
+        &--eco {
+            background-image: url('../img/icon-feature-1.svg');
+            height: 37px;
+            width: 32px;
+        }
+
+        &--style {
+            background-image: url('../img/icon-feature-3.svg');
+            height: 27px;
+            width: 47px;
+        }
+
+        &--likes {
+            background-image: url('../img/icon-feature-5.svg');
+            height: 28px;
+            width: 54px;
+        }
+
+        &--with-love {
+            background-image: url('../img/icon-feature-2.svg');
+            height: 34px;
+            width: 34px;
+        }
+
+        &--domestic {
+            background-image: url('../img/icon-feature-4.svg');
+            height: 23px;
+            width: 54px;
+        }
+
+        &--gift {
+            background-image: url('../img/icon-feature-6.svg');
+            height: 32px;
+            width: 33px;
+        }
+    }
 }

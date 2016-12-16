@@ -1,0 +1,39 @@
+body {
+    font-family: 'Open Sans', serif;
+}
+
+.title {
+    font-size: $title-font-size-s;
+    font-weight: $title-font-weight;
+    line-height: $title-line-height-s;
+
+    @media all and (min-width: 768px) {
+        font-size: $title-font-size-m;
+        line-height: $title-line-height-m;
+    }
+
+    @media all and (min-width: 1150px) {
+        font-size: $title-font-size-l;
+        line-height: $title-line-height-l;
+    }
+}
+
+.text {
+    font-size: $main-font-size-s;
+    line-height: $main-line-height-s;
+
+    @media all and (min-width: 768px) {
+        font-size: $main-font-size-m;
+        line-height: $main-line-height-m;
+    }
+}
+
+.catalog__title {
+    font-size: $title-font-size-s;
+    line-height: $title-line-height;
+    font-weight: $title-font-weight;
+
+    @media all and (min-width: 768px) {
+        font-size: $title-font-size-m;
+    }
+}

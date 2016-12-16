@@ -1,7 +1,189 @@
-.contacts {
-	background-color: #fff;
+@import 'container.css';
 
-	&_arrow {
-		background-color: #fff;
-	}
+.contacts {
+    /* @mixin center; */
+    background-color: #fff;
+    color: $main-color;
+    padding-bottom: 40px;
+
+    @media all and (min-width: 768px) {
+        padding-top: 130px;
+        padding-bottom: 55px;
+    }
+
+    @media all and (min-width: 1150px) {
+        min-height: 630px;
+        padding-bottom: 100px;
+        position: relative;
+    }
+
+    &__header {
+        font-weight: 400;
+        margin-bottom: 30px;
+
+        @media all and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media all and (min-width: 1150px) {
+            justify-content: inherit;
+        }
+    }
+
+    &__flag {
+        display: none;
+
+        @media all and (min-width: 768px) {
+            background: url('../img/icon-flag.svg') no-repeat;
+            display: block;
+            height: 82px;
+            width: 47px;
+        }
+
+        @media all and (min-width: 1150px) {
+            order: -1;
+            margin-right: 60px;
+            margin-left: 70px;
+        }
+
+    }
+
+    &__content {
+
+        @media all and (min-width: 1150px) {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-left: 175px;
+            width: 300px;
+        }
+    }
+
+    &__table {
+
+        border-spacing: 0;
+        table-layout: fixed;
+        width: 100%;
+
+        @media all and (min-width: 1150px) {
+            width: 315px;
+        }
+
+        tr {
+            @media all and (min-width: 768px) {
+            display: inline-block;
+            width: 50%;
+            padding-right: 30px;
+            vertical-align: top;
+            }
+
+            @media all and (min-width: 1150px) {
+            display: inherit;
+            }
+
+        }
+
+    }
+
+    &__name {
+        height: 50px;
+        width: 80px;
+        word-break: break-all;
+    }
+
+    &__value {
+        width: 200px;
+        word-break: break-all;
+
+        @media all and (min-width: 768px) {
+            width: auto;
+        }
+
+    }
+
+    &__emailLink,
+    &__emailLink:visited {
+        border-bottom: 1px solid $accent-color;
+        color: $main-color;
+        display: inline-block;
+        height: 27px;
+        text-decoration: none;
+        word-break: break-all;
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+
+        &:active {
+            color: $active-color;
+            border-bottom-color: $active-color;
+        }
+    }
+
+    &__mapContainer {
+        margin: 30px -30px 0 -30px;
+        position: relative;
+
+        @media all and (min-width: 768px) {
+            height: 460px;
+            margin: 40px -50px 0 -50px;
+            overflow: hidden;
+        }
+
+        @media all and (min-width: 1150px) {
+            position: absolute;
+            top: 25px;
+            right: 50px;
+            height: 460px;
+            width: 530px;
+        }
+    }
+
+    &__arrow {
+        background-color: #fff;
+        background: url('../img/icon-map-pin.svg') no-repeat;
+        height: 101px;
+        left: 124px;
+        position: absolute;
+        top: 165px;
+        width: 66px;
+
+        @media all and (min-width: 768px) {
+            left: 50%;
+            margin-left: -30px;
+            margin-top: -50px;
+            top: 50%;
+        }
+    }
+
+    &__map {
+
+        @media all and (min-width: 768px) {
+            height: 900px;
+            margin-top: -290px;
+            width: 100%;
+        }
+
+        @media all and (min-width: 1150px) {
+            height: 460px;
+            margin-top: 0;
+            width: 530px;
+        }
+    }
+
+    &__writeUs {
+        margin-top: 40px;
+
+        @media all and (min-width: 768px) {
+            margin: 40px auto 0;
+            width: 230px;
+        }
+
+        @media all and (min-width: 1150px) {
+            margin-top: 80px;
+        }
+    }
 }
