@@ -2,18 +2,18 @@
 
 .footer {
     background-color: #f1f1f1;
+    margin-top: auto;
     width: 100%;
 
     &__content {
-      /* @mixin center; */
 
-      @media all and (min-width: 768px) {
-          align-items: center;
-          display: flex;
-          justify-content: space-between;
-          padding-bottom: 50px;
-          padding-top: 50px;
-      }
+        @media all and (min-width: 768px) {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 50px;
+            padding-top: 50px;
+        }
 
     }
 
@@ -27,5 +27,4 @@
         }
 
     }
-
 }
