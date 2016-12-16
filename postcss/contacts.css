@@ -62,7 +62,7 @@
     }
 
     &__table {
-        
+
         border-spacing: 0;
         table-layout: fixed;
         width: 100%;
@@ -72,20 +72,18 @@
         }
 
         tr {
-          @media all and (min-width: 768px) {
+            @media all and (min-width: 768px) {
             display: inline-block;
             width: 50%;
             padding-right: 30px;
             vertical-align: top;
-          }
+            }
 
-          @media all and (min-width: 1150px) {
+            @media all and (min-width: 1150px) {
             display: inherit;
-          }
+            }
 
         }
-
-
 
     }
 
@@ -100,7 +98,7 @@
         word-break: break-all;
 
         @media all and (min-width: 768px) {
-          width: auto;
+            width: auto;
         }
 
     }
@@ -180,12 +178,12 @@
         margin-top: 40px;
 
         @media all and (min-width: 768px) {
-          margin: 40px auto 0;
-          width: 230px;
+            margin: 40px auto 0;
+            width: 230px;
         }
 
         @media all and (min-width: 1150px) {
-          margin-top: 80px;
+            margin-top: 80px;
         }
     }
 }

@@ -1,7 +1,6 @@
 @import 'container.css';
 
 .review {
-    /* @mixin center; */
     padding-bottom: 55px;
     padding-top: 30px;
 
@@ -23,7 +22,6 @@
     }
 
     &__header {
-        
         margin-bottom: 40px;
 
         @media all and (min-width: 768px) {
@@ -33,11 +31,11 @@
     }
 
     &__text {
-        
 
         @media all and (min-width: 1150px) {
             max-width: 790px;
         }
+
     }
 
     &__item {

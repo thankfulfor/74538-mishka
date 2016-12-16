@@ -5,7 +5,6 @@
     padding-bottom: 30px;
     padding-top: 35px;
 
-
     @media all and (min-width: 768px) {
         padding-top: 55px;
         padding-bottom: 80px;
@@ -16,7 +15,7 @@
     }
 
     &__header {
-        
+
         @media all and (min-width: 768px) {
           margin-bottom: 50px;
         }

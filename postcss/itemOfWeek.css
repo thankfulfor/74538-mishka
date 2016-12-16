@@ -1,7 +1,6 @@
 @import 'container.css';
 
 .itemOfWeek {
-    /* @mixin center; */
     padding-top: 35px;
     padding-bottom: 35px;
     position: relative;
@@ -35,12 +34,11 @@
     }
 
     &__title {
-      
 
-      @media all and (min-width: 1150px) {
-          order: 1;
-          padding-left: 55px;
-      }
+        @media all and (min-width: 1150px) {
+            order: 1;
+            padding-left: 55px;
+        }
     }
 
     &__subtitle {
@@ -52,16 +50,16 @@
         text-transform: uppercase;
 
         @media all and (min-width: 768px) {
-          margin-top: 16px;
-          text-align: center;
+            margin-top: 16px;
+            text-align: center;
         }
 
         br {
-          display: none;
+            display: none;
 
-          @media all and (min-width: 768px) {
+            @media all and (min-width: 768px) {
             display: inline;
-          }
+            }
         }
     }
 
@@ -78,13 +76,12 @@
     }
 
     &__text {
-        
         line-height: 24px;
         margin: 30px 0 30px;
 
         @media all and (min-width: 768px) {
-          margin: 0 55px 45px 0;
-          width: 290px;
+            margin: 0 55px 45px 0;
+            width: 290px;
         }
 
         @media all and (min-width: 1150px) {
@@ -100,12 +97,11 @@
         td {
             border-bottom: 1px solid $main-color;
             padding: 5px;
-            
         }
 
         @media all and (min-width: 768px) {
-          margin-top: 55px;
-          width: 290px;
+            margin-top: 55px;
+            width: 290px;
         }
     }
 
@@ -158,8 +154,9 @@
     &__orderButton {
 
         @media all and (min-width: 768px) {
-          width: 290px;
+            width: 290px;
         }
 
     }
+
 }
