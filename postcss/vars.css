@@ -51,11 +51,11 @@ $button-font-size:          17px;
 $button-line-height:        16px;
 
 /*Catalog items*/
-$name-font-weight:          700;
+$title-font-weight:          700;
 
-$name-line-height:          24px;
-$name-font-size-s:          17px;
-$name-font-size-m:          20px;
+$title-line-height:          24px;
+$title-font-size-s:          17px;
+$title-font-size-m:          20px;
 
 $desciption-line-height:    30px;
 $desciption-font-size-s:    13px;

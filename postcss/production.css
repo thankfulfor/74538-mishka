@@ -1,37 +1,31 @@
 .production {
 
+    border: 1px solid #ececec;
     padding: 30px;
 
-    @media all and (min-width: 1150px) {
-        padding: 0;
-        margin-bottom: 105px;
+    @media all and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0 40px 45px;
+        margin-top: 55px;
+        margin-bottom: 65px;
     }
 
-    &__content {
-        border: 1px solid black;
-        padding: 30px;
-
-        @media all and (min-width: 768px) {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-        }
-
-        @media all and (min-width: 1150px) {
-            height: 455px;
-            padding: 0;
-            align-content: flex-start;
-            justify-content: center;
-        }
+    @media all and (min-width: 1150px) {
+        padding: 45px 0 50px 754px;
+        margin-bottom: 105px;
+        display: block;
+        position: relative;
     }
 
     &__title {
         display: inline-block;
-        width: 190px;
+        left: 25px;
         margin-bottom: 30px;
         padding-left: 50px;
         position: relative;
-        left: 25px;
+        width: 190px;
 
         &::before {
             background: url('../img/icon-video.svg') no-repeat;
@@ -47,16 +41,18 @@
 
         @media all and (min-width: 768px) {
             left: 0;
-            width: 300px;
+            width: auto;
+
 
             &::before {
-                top: -10px;
+                top: -6px;
             }
         }
 
         @media all and (min-width: 1150px) {
-            width: 140px;
+            margin-bottom: 40px;
             padding: 40px 0 0;
+            width: 140px;
 
             &::before {
                 margin-left: 0;
@@ -70,34 +66,54 @@
         background: url('../img/video-mobile@1x.jpg') no-repeat;
         height: 150px;
         width: 260px;
-        margin: 0 0 30px -32px;
+        margin: 0 0 30px 0;
         display: flex;
 
         @media all and (min-width: 768px) {
-            width: 608px;
-            height: 455px;
             background-size: cover;
+            height: 455px;
+            margin-left: -41px;
             order: -1;
+            width: 648px;
         }
 
         @media all and (min-width: 1150px) {
-            width: 685px;
             margin: 0 80px 0 0;
+            width: 685px;
+            position: absolute;
+            left: 0;
+            top: 0;
         }
     }
 
-    &__previewPlayIcon {
+    &__previewPlayIcon,
+    &__previewPlayIcon:visited {
         background: url('../img/icon-play.svg') no-repeat;
+        background-size: cover;
         height: 77px;
-        width: 101px;
         margin: auto;
+        width: 101px;
+        transition: all 0.5s;
+
+        &:hover {
+            transform: scale(1.2);
+            transition: all 0.5s;
+        }
+
+        &:active {
+            transform: scale(0.8);
+            transition: all 0.5s;
+        }
     }
 
     &__text {
         margin-bottom: 30px;
+        font-size: $main-font-size-s;
+        line-height: $main-line-height-s;
 
         @media all and (min-width: 1150px) {
-            width: 220px;
+            margin-bottom: 60px;
+            width: 230px;
         }
     }
 

@@ -27,3 +27,13 @@ body {
         line-height: $main-line-height-m;
     }
 }
+
+.catalog__title {
+    font-size: $title-font-size-s;
+    line-height: $title-line-height;
+    font-weight: $title-font-weight;
+
+    @media all and (min-width: 768px) {
+        font-size: $title-font-size-m;
+    }
+}
