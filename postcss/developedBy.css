@@ -2,17 +2,31 @@
     padding: 30px 0;
     text-align: center;
 
+    @media all and (min-width: 768px) {
+      padding: 0;
+    }
+
     &__link {
-        font-weight: 700;
-        vertical-align: middle;
+        color: #000;
         display: inline-block;
-        margin-left: 30px;
+        font-weight: 700;
+        text-decoration: none;
+        vertical-align: middle;
+    }
+
+    &__text {
+        display: inline-block;
+        font-size: 19px;
+        line-height: 18px;
+        vertical-align: middle;
     }
 
     &__icon {
         background: url('../img/logo-htmlacademy.svg') no-repeat;
         display: inline-block;
         height: 34px;
+        margin-left: 30px;
+        vertical-align: middle;
         width: 27px;
     }
 }

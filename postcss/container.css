@@ -1,8 +1,3 @@
-.container {
-    background-color: #f9f9f9;
-    width: 100%;
-}
-
 @define-mixin center {
     margin: 0 auto;
     padding-left: 30px;
@@ -13,6 +8,7 @@
         padding-left: 50px;
         padding-right: 50px;
         width: 768px;
+        box-sizing: border-box;
     }
 
     @media all and (min-width: 1150px) {
