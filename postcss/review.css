@@ -23,7 +23,7 @@
     }
 
     &__header {
-        @mixin title;
+        
         margin-bottom: 40px;
 
         @media all and (min-width: 768px) {
@@ -33,7 +33,7 @@
     }
 
     &__text {
-        @mixin text;
+        
 
         @media all and (min-width: 1150px) {
             max-width: 790px;

@@ -2,7 +2,7 @@ body {
     font-family: 'Open Sans', serif;
 }
 
-@define-mixin title {
+.title {
     font-size: $title-font-size-s;
     font-weight: $title-font-weight;
     line-height: $title-line-height-s;
@@ -18,7 +18,7 @@ body {
     }
 }
 
-@define-mixin text {
+.text {
     font-size: $main-font-size-s;
     line-height: $main-line-height-s;
 

@@ -26,12 +26,12 @@
 	}
 
 	&__header {
-		@mixin title;
+		
 		margin-bottom: 25px;
 	}
 
 	&__subhead {
-		@mixin text;
+		
 		margin-bottom: 28px;
 	}
 
