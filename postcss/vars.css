@@ -51,11 +51,11 @@ $button-font-size:          17px;
 $button-line-height:        16px;
 
 /*Catalog items*/
-$title-font-weight:          700;
+$item-title-font-weight:    700;
 
-$title-line-height:          24px;
-$title-font-size-s:          17px;
-$title-font-size-m:          20px;
+$item-title-line-height:    24px;
+$item-title-font-size-s:    17px;
+$item-title-font-size-m:    20px;
 
 $desciption-line-height:    30px;
 $desciption-font-size-s:    13px;
@@ -64,3 +64,8 @@ $desciption-font-size-m:    15px;
 $price-line-height:         24px;
 $price-font-size-s:         15px;
 $price-font-size-m:         17px;
+
+/*Link colors*/
+$link-color:				#000;
+$link-color-hover:			#666;
+$link-color-active:			#b2b2b2;

@@ -1,9 +1,193 @@
 .header {
-    background-color: #fff;
+    border-bottom: 1px solid #ececec;
+    
+    &__content {
+        align-items: center;
+        background-color: #fff;
+        display: flex;
+        height: 80px;
+        justify-content: space-between;
+        position: relative;
+
+        @media all and (min-width: 768px) {
+            align-items: inherit;
+        }
+    }
 
     &__logo {
         background: url('../img/logo-mobile.svg') no-repeat;
         height: 35px;
+        margin: 0 auto;
         width: 86px;
+
+        @media all and (min-width: 768px) {
+            margin: auto 0;
+        }
+    }
+
+    &__icon {
+        background: url('../img/icon-menu-open.svg') no-repeat;
+        height: 14px;
+        width: 20px;
+
+        &--opened {
+            background-image: url('../img/icon-menu-close.svg');
+            width: 22px;
+            height: 20px;
+
+            @media all and (min-width: 768px) {
+                display: none;
+            }
+        }
+    }
+
+    &__menu  {
+        display: none;
+
+        &--opened {
+            background-color: #fff;
+            display: block;
+            left: -30px;
+            position: absolute;
+            right: -30px;
+            top: 80px;
+
+            @media all and (min-width: 768px) {
+                background-color: transparent;
+                height: 130px;
+                margin-top: -80px;
+                padding-right: 50px;
+                width: 740px;
+            }
+        }
+    }
+
+    &__items {
+        margin: 0;
+        padding: 0;
+
+        @media all and (min-width: 768px) {
+            display: flex;
+        }
+    }
+
+    &__item {
+        border-bottom: 1px solid #ececec;
+        height: 78px;
+        line-height: 78px;
+        list-style: none;
+        padding-left: 76px;
+        position: relative;
+
+        @media all and (min-width: 768px) {
+            border: 0;
+            height: 80px;
+            line-height: 80px;
+        }
+    }
+
+    &__item:nth-child(1) {
+        @media all and (min-width: 768px) {
+            margin-top: 100px;
+            padding-left: 30px;
+            width: 190px;
+            line-height: 100%;
+        }
+    }
+
+    &__item:nth-child(2) {
+
+        @media all and (min-width: 768px) {
+            margin-top: 100px;
+            padding-left: 30px;
+            width: 210px;
+            line-height: 100%;
+        }
+    }
+
+    &__item:nth-child(3) {
+
+        @media all and (min-width: 768px) {
+            border-left: 1px solid #ececec;
+            border-right: 1px solid #ececec;
+        }
+    }
+
+    &__item:nth-child(4) {
+
+        @media all and (min-width: 768px) {
+            width: 267px;
+        }
+    }
+
+    &__link {
+        color: $link-color;
+        font-weight: $font-weight-bold;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            color: $link-color-hover;
+        }
+
+        &:active {
+            color: $link-color-active;
+        }
+    }
+
+    &__itemIcon {
+        background-repeat: no-repeat;
+        height: 19px;
+        left: 30px;
+        position: absolute;
+        top: 30px;
+        width: 20px;
+
+        &--search {
+            background-image: url('../img/icon-search.svg');
+        }
+
+        &--cart {
+            background-image: url('../img/icon-cart.svg');
+        }
+
+    }
+
+    &__searchText {
+        @media all and (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__freeDeliver {
+        display: none;
+
+        @media all and (min-width: 768px) {
+            display: block;
+            font-size: $main-font-size-s;
+            margin-right: -11px;
+            margin-top: 100px;
+            width: 231px;
+        }
+    }
+
+    &__linkNew {
+        display: none;
+
+        @media all and (min-width: 1150px) {
+            display: block;
+            position: absolute;
+            left: 50px;
+        }
+    }
+
+    &__linkSale {
+        display: none;
+
+        @media all and (min-width: 1150px) {
+            display: block;
+            position: absolute;
+            left: 50px;
+        }
     }
 }

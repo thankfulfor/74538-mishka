@@ -2,7 +2,7 @@
 
 .footer {
     background-color: #f1f1f1;
-    margin-top: auto;
+    margin-top: auto; /* Чтобы футер прилипал к низу страницы */
     width: 100%;
 
     &__content {

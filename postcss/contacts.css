@@ -87,12 +87,11 @@
 
     &__name {
         height: 50px;
-        width: 80px;
+        width: 75px;
         word-break: break-all;
     }
 
     &__value {
-        width: 200px;
         word-break: break-all;
 
         @media all and (min-width: 768px) {
@@ -124,6 +123,9 @@
     &__mapContainer {
         margin: 30px -30px 0 -30px;
         position: relative;
+        /* left: 0;
+        right: 0; */
+        overflow: hidden;
 
         @media all and (min-width: 768px) {
             height: 460px;
