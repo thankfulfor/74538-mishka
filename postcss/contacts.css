@@ -1,7 +1,6 @@
 @import 'container.css';
 
 .contacts {
-    /* @mixin center; */
     background-color: #fff;
     color: $main-color;
     padding-bottom: 40px;
@@ -62,7 +61,6 @@
     }
 
     &__table {
-
         border-spacing: 0;
         table-layout: fixed;
         width: 100%;
@@ -73,14 +71,14 @@
 
         tr {
             @media all and (min-width: 768px) {
-            display: inline-block;
-            width: 50%;
-            padding-right: 30px;
-            vertical-align: top;
+                display: inline-block;
+                padding-right: 30px;
+                vertical-align: top;
+                width: 50%;
             }
 
             @media all and (min-width: 1150px) {
-            display: inherit;
+                display: inherit;
             }
 
         }
