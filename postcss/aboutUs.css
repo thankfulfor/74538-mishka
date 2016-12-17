@@ -39,9 +39,8 @@
 
     &__item {
         font-size: $main-font-size-s;
-        font-weight: $title-font-weight;
+        font-weight: $font-weight-bold;
         line-height: auto;
-        list-style: none;
         margin-top: 30px;
 
         &:first-child {

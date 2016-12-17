@@ -52,16 +52,18 @@
 
     &__menu  {
         display: none;
-
     }
 
     &__menu--opened {
-        background-color: #fff;
-        display: block;
-        left: -30px;
-        position: absolute;
-        right: -30px;
-        top: 80px;
+
+        @media all and (min-width: 768px) {
+            background-color: #fff;
+            display: block;
+            left: -30px;
+            position: absolute;
+            right: -30px;
+            top: 80px;
+        }
 
         @media all and (min-width: 768px) {
             background-color: transparent;
@@ -96,7 +98,6 @@
         border-top: 1px solid #ececec;
         height: 78px;
         line-height: 78px;
-        list-style: none;
         padding-left: 76px;
         position: relative;
     }

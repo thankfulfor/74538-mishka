@@ -23,6 +23,9 @@
 
     &__title {
         display: inline-block;
+        font-size: $item-title-font-size-s;
+        line-height: $item-title-line-height;
+        font-weight: $font-weight-bold;
         left: 25px;
         margin-bottom: 30px;
         padding-left: 50px;
@@ -42,6 +45,7 @@
         }
 
         @media all and (min-width: 768px) {
+            font-size: $item-title-font-size-m;
             left: 0;
             width: auto;
 

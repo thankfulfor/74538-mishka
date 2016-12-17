@@ -1,3 +1,119 @@
+@import 'vars.css';
+
 .catalog {
     background-color: #fff;
+    margin-top: 30px;
+
+    &__items {
+        @media all and (min-width: 1150px) {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    &__item {
+        border: 1px solid #ececec;
+        margin-top: 30px;
+
+        @media all and (min-width: 768px) {
+            display: flex;
+            margin-top: 50px;
+        }
+
+        @media all and (min-width: 1150px) {
+            width: 315px;
+            flex-direction: column;
+        }
+    }
+
+    &__imageContainer {
+        @media all and (min-width: 768px) {
+            flex: 0 0 335px;
+            height: 335px;
+            overflow: hidden;
+        }
+    }
+
+    &__image {
+        height: 100%;
+        width: auto;
+    }
+
+    &__description {
+        padding: 30px;
+
+        @media all and (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        @media all and (min-width: 1150px) {
+            flex-direction: row;
+            flex-grow: 1;
+            flex-wrap: wrap;
+            padding: 25px;
+        }
+    }
+
+    &__name {
+        font-size: $item-title-font-size-s;
+        font-weight: $font-weight-bold;
+        line-height: $item-title-line-height;
+        margin-bottom: 15px;
+
+        @media all and (min-width: 768px) {
+            font-size: $item-title-font-size-m;
+        }
+
+        @media all and (min-width: 1150px) {
+            flex: 0 0 100%;
+        }
+    }
+
+    &__text {
+        font-size: $desciption-font-size-s;
+        line-height: $desciption-line-height;
+
+        @media all and (min-width: 768px) {
+            font-size: $desciption-font-size-m;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__buy {
+        border-top: 1px solid #ececec;
+        margin-top: 30px;
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+
+        @media all and (min-width: 768px) {
+            margin-top: auto;
+        }
+
+        @media all and (min-width: 1150px) {
+            align-self: flex-end;
+            flex: 0 0 100%;
+            margin-top: inherit;
+        }
+    }
+
+    &__price {
+        font-size: $price-font-size-s;
+        font-weight: $font-weight-bold;
+        line-height: $price-line-height;
+
+        @media all and (min-width: 768px) {
+            font-size: $price-font-size-m;
+            margin-to: auto;
+        }
+        
+    }
+
+    &__toCart {
+        background: url('../img/icon-cart.svg') no-repeat;
+        width: 20px;
+        height: 19px;
+    }
 }

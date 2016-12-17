@@ -33,8 +33,6 @@ $main-line-height-m:        30px;
 
 
 /*Title*/
-$title-font-weight:         700;
-
 $title-font-size-s:         25px;
 $title-line-height-s:       30px;
 
@@ -46,13 +44,10 @@ $title-line-height-l:       57px;
 
 
 /*Button*/
-$button-font-wight:         700;
 $button-font-size:          17px;
 $button-line-height:        16px;
 
 /*Catalog items*/
-$item-title-font-weight:    700;
-
 $item-title-line-height:    24px;
 $item-title-font-size-s:    17px;
 $item-title-font-size-m:    20px;

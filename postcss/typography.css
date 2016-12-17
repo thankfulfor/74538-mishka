@@ -1,10 +1,12 @@
+@import 'vars.css';
+
 body {
     font-family: 'Open Sans', serif;
 }
 
 .title {
     font-size: $title-font-size-s;
-    font-weight: $title-font-weight;
+    font-weight: $font-weight-bold;
     line-height: $title-line-height-s;
 
     @media all and (min-width: 768px) {
@@ -25,15 +27,5 @@ body {
     @media all and (min-width: 768px) {
         font-size: $main-font-size-m;
         line-height: $main-line-height-m;
-    }
-}
-
-.catalog__title {
-    font-size: $item-title-font-size-s;
-    line-height: $item-title-line-height;
-    font-weight: $item-title-font-weight;
-
-    @media all and (min-width: 768px) {
-        font-size: $item-title-font-size-m;
     }
 }
