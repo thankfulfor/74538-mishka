@@ -51,7 +51,6 @@
         align-items: center;
         background-color: $accent-color;
         box-sizing: border-box;
-        color: #fff;
         display: flex;
         flex-grow: 1;
         justify-content: space-between;
@@ -77,6 +76,7 @@
     }
 
     &__text {
+        color: #fff;
         font-size: 20px;
         font-weight: $font-weight-bold;
         width: 180px;

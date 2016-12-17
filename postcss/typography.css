@@ -29,11 +29,11 @@ body {
 }
 
 .catalog__title {
-    font-size: $title-font-size-s;
-    line-height: $title-line-height;
-    font-weight: $title-font-weight;
+    font-size: $item-title-font-size-s;
+    line-height: $item-title-line-height;
+    font-weight: $item-title-font-weight;
 
     @media all and (min-width: 768px) {
-        font-size: $title-font-size-m;
+        font-size: $item-title-font-size-m;
     }
 }
