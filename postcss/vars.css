@@ -25,6 +25,9 @@ $active-color:              #d2f0eb;
 /*Main*/
 $font-weight-bold:          700;
 
+$main-font-size-xs:         13px;
+$main-line-height-xs:       24px;
+
 $main-font-size-s:          15px;
 $main-line-height-s:        30px;
 
@@ -64,3 +67,13 @@ $price-font-size-m:         17px;
 $link-color:				#000;
 $link-color-hover:			#666;
 $link-color-active:			#b2b2b2;
+
+/*Form*/
+$form-title-font-size:		17px;
+$form-title-line-height:	16px;
+
+$form-input-font-size-s:	17px;
+$form-input-line-height-s:	18px;
+
+$form-input-font-size-m:	19px;
+$form-input-line-height-m:	18px;
