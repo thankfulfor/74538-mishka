@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка, главная</title>
     <link href="css/style.css" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
@@ -70,16 +71,16 @@
             <p class="itemOfWeek__text text">Экологически чистая пряжа, ручная работа. Доступны в&nbsp;шести расцветках, и&nbsp;трех размерах.</p>
             <table class="itemOfWeek__table">
               <tr class="itemOfWeek__row">
-                <td class="itemOfWeek__colorHeader text">Цвет</td>
-                <td class="itemOfWeek__colorValue text">&laquo;Тиффани&raquo;/серый</td>
+                <td class="itemOfWeek__colorHeader">Цвет</td>
+                <td class="itemOfWeek__colorValue">&laquo;Тиффани&raquo;/серый</td>
               </tr>
               <tr class="itemOfWeek__row">
-                <td class="itemOfWeek__DiameterHeader text">Диаметр</td>
-                <td class="itemOfWeek__DiameterValue text">25 см</td>
+                <td class="itemOfWeek__DiameterHeader">Диаметр</td>
+                <td class="itemOfWeek__DiameterValue">25 см</td>
               </tr>
               <tr class="itemOfWeek__row">
-                <td class="itemOfWeek__HeightHeader text">Высота</td>
-                <td class="itemOfWeek__HeightValue text">15 см</td>
+                <td class="itemOfWeek__HeightHeader">Высота</td>
+                <td class="itemOfWeek__HeightValue">15 см</td>
               </tr>
             </table>
             <div class="itemOfWeek__imageContainer">
@@ -87,7 +88,7 @@
             </div>
             <div  class="itemOfWeek__price">Цена: 990 руб.</div>
             <button class="button itemOfWeek__orderButton" title="Заказать">Заказать</button>
-            <div class="modal">
+            <div class="modal modal--hidden">
               <div class="modal__content">
                 <div class="modal__header title">Добавить в&nbsp;корзину</div>
                 <div class="modal__subhead text">Выберите размер</div>
@@ -189,5 +190,6 @@
         </div>
       </footer>
     </div>
+    <script src="modal.js"></script>
   </body>
 </html>

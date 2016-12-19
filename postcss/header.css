@@ -57,20 +57,14 @@
     &__menu--opened {
 
         @media all and (min-width: 768px) {
-            background-color: #fff;
-            display: block;
-            left: -30px;
-            position: absolute;
-            right: -30px;
-            top: 80px;
-        }
-
-        @media all and (min-width: 768px) {
             background-color: transparent;
+            display: block;
             height: 130px;
+            left: 0;
             margin-top: -80px;
-            padding-right: 50px;
-            width: 730px;
+            position: absolute;
+            right: 0;
+            top: 80px;
         }
 
         @media all and (min-width: 1150px) {
@@ -109,8 +103,8 @@
             height: 60px;
             line-height: 60px;
             margin-top: 90px;
-            padding-left: 30px;
-            width: 190px;
+            padding-left: 0;
+            width: 200px;
         }
 
         @media all and (min-width: 1150px) {
@@ -145,10 +139,11 @@
 
 
         @media all and (min-width: 768px) {
-            width: 280px;
+            width: 310px;
             height: 90px;
             line-height: 90px;
             border: 0;
+            padding-left: 85px;
         }
 
         @media all and (min-width: 1150px) {

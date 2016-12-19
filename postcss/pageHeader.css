@@ -5,7 +5,7 @@
 
     &__top {
         background: url('../img/hero-mobile%401x.jpg') top center no-repeat;
-        background-size: cover;
+        background-size: 171%;
         color: #000;
         padding-bottom: 122px;
         padding-top: 75px;
@@ -15,7 +15,7 @@
             padding-bottom: 373px;
         }
 
-        @media all and (min-width: 768px) {
+        @media all and (min-width: 1150px) {
             padding-bottom: 358px;
         }
     }
@@ -62,7 +62,7 @@
 
         @media all and (min-width: 768px) {
             flex-grow: 0;
-            padding: 30px;
+            padding: 28px 34px 30px 34px;
             width: 335px;
 
             & + & {

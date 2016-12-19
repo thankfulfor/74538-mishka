@@ -5,12 +5,14 @@
     width: 320px;
 
     @media all and (min-width: 768px) {
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 41px;
+        padding-right: 41px;
         width: 750px; /* Такое число выбрано неслучайно: в периоде от 761 до 782 добавляется верт.скролл и ширина этого скролла создает горизонтальный скролл */
     }
 
     @media all and (min-width: 1150px) {
+        padding-left: 42px;
+        padding-right: 42px;
         width: 1134px; /* Такое число выбрано неслучайно: в периоде от 1150 до 1164 добавляется верт.скролл и ширина этого скролла создает горизонтальный скролл */
     }
 }
