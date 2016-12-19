@@ -1,12 +1,16 @@
 .modal {
     background-color: rgba(255,255,255,.9);
     bottom: 0;
-    display: flex;
+    display: none;
     left: 0;
     position: fixed;
     right: 0;
     top: 0;
     z-index: 2;
+
+    &--show {
+      display: flex;
+    }
 
     &__content {
         background-color: #fff;
