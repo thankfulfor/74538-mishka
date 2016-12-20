@@ -12,6 +12,8 @@
 
     @media all and (min-width: 1150px) {
         padding-left: 175px;
+        padding-top: 73px;
+        padding-bottom: 38px;
     }
 
     &__header {
@@ -21,7 +23,6 @@
         }
 
         @media all and (min-width: 1150px) {
-            margin-bottom: 50px;
         }
     }
 
@@ -34,6 +35,10 @@
             flex-direction: column;
             flex-wrap: wrap;
             max-height: 435px;
+        }
+
+        @media all and (min-width: 1150px) {
+            margin-bottom: 50px;
         }
     }
 
@@ -74,41 +79,40 @@
 
     &__icon {
         background-repeat: no-repeat;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+        height: 37px;
+
+        @media all and (min-width: 1150px) {
+          margin-bottom: 8px;
+        }
 
         &--eco {
             background-image: url('../img/icon-feature-1.svg');
-            height: 37px;
             width: 32px;
         }
 
         &--style {
             background-image: url('../img/icon-feature-3.svg');
-            height: 27px;
             width: 47px;
         }
 
         &--likes {
             background-image: url('../img/icon-feature-5.svg');
-            height: 28px;
             width: 54px;
         }
 
         &--with-love {
             background-image: url('../img/icon-feature-2.svg');
-            height: 34px;
             width: 34px;
         }
 
         &--domestic {
             background-image: url('../img/icon-feature-4.svg');
-            height: 23px;
             width: 54px;
         }
 
         &--gift {
             background-image: url('../img/icon-feature-6.svg');
-            height: 32px;
             width: 33px;
         }
     }
