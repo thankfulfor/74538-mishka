@@ -3,7 +3,7 @@
     text-align: center;
 
     @media all and (min-width: 768px) {
-      padding: 0;
+        padding: 0;
     }
 
     &__link {
@@ -28,5 +28,9 @@
         margin-left: 30px;
         vertical-align: middle;
         width: 27px;
+
+        @media all and (min-width: 768px) {
+          margin-left: 26px;
+        }
     }
 }

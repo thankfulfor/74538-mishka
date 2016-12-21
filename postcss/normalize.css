@@ -1,6 +1,5 @@
 html,
 body {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -11,6 +10,7 @@ body {
     justify-content: space-between;
 }
 
+/* Чтобы футер прилипал к низу страницы */
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -22,10 +22,18 @@ body {
     box-sizing: border-box;
 }
 
-p {
+p,
+h1,
+h2,
+ul {
     margin: 0;
+    padding: 0;
 }
 
 td {
-  vertical-align: top;
+    vertical-align: top;
+}
+
+li {
+    list-style: none;
 }

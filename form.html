@@ -2,142 +2,221 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <title>HTML Academy: Мишка, вязание на заказ</title>
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
 
-    <header class="header">
-      <div class="header__logo"></div>
-      <div class="menu">
-        <div class="menu__icon menu__icon--open"></div>
-        <div class="menu__icon menu__icon--close"></div>
-        <ul class="menu__items">
-          <li class="menu__item">
-            <a class="menu__link" href="" title="Каталог товаров">Каталог товаров</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="" title="Вязание на заказ">Вязание на заказ</a>
-          </li>
-          <li class="menu__item">
-            <span class="menu__itemIcon"></span>
-            <a class="menu__link" href="" title="Поиск по сайту">Поиск по сайту</a>
-          </li>
-          <li class="menu__item">
-            <span class="menu__itemIcon"></span>
-            <a class="menu__link" href="" title="Корзина: пока пуста">Корзина: пока пуста</a>
-          </li>
-        </ul>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__content">
+            <a href="index.html" title="Мишка" class="header__logo"></a>
+            <div class="header__icon header__icon--opened"></div>
+            <nav class="header__menu header__menu--opened">
+              <ul class="header__items">
+                <li class="header__item">
+                  <a class="header__link header__link--catalog" href="catalog.html" title="Каталог товаров">Каталог товаров</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link header__link--order" href="form.html" title="Вязание на заказ">Вязание на заказ</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="" title="Поиск по сайту">
+                    <span class="header__itemIcon header__itemIcon--search"></span>
+                    <span class="header__searchText">Поиск по сайту</span>
+                  </a>
+                </li>
+                <li class="header__item">
+                  <span class="header__itemIcon header__itemIcon--cart"></span>
+                  <a class="header__link header__link--cart" href="" title="Корзина: пока пуста">Корзина: пока пуста</a>
+                </li>
+                <li class="header__itemDesktop">
+                  <a class="header__link header__link--new" href="" title="Новые поступления">Новые поступления</a>
+                </li>
+                <li class="header__itemDesktop header__itemDesktop--sale">
+                  <a class="header__link" href="" title="Распродажа">Распродажа</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__freeDeliver">Бесплатная доставка по России</div>
+          </div>
+        </div>
+      </header>
+
+      <section class="simpleTitle">
+        <div class="container">
+          <h1 class="title">Вязание на заказ</h1>
+        </div>
+      </section>
+
+      <div class="form">
+        <div class="form__pad">
+          <div class="container">
+            <div class="form__description">
+              Мы&nbsp;будем рады воплотить в&nbsp;жизнь ваши пожелания! Заполните простую форму заказа и&nbsp;мы&nbsp;свяжемся с&nbsp;вам, чтобы уточнить детали
+            </div>
+          </div>
+        </div>
+        <form action="#" method="post">
+          <!-- Здесь и далее тег fieldset заменен на div, потому что тег fieldset не работает с disaply:flex -->
+          <div class="form__pad">
+            <div class="container">
+              <div class="form__fieldset">
+                <div class="form__titleBlock">
+                  <div class="form__title">Тип</div>
+                  <div class="form__line"></div>
+                </div>
+                <div class="form__type">
+                  <label class="form__radioOption">
+                    <input type="radio" name="radio" class="form__hidden" required>
+                    <span class="form__text form__name">Аксессуар для интерьера</span>
+                    <span class="form__radio"></span>
+                  </label>
+                  <label class="form__radioOption">
+                    <input type="radio" name="radio" class="form__hidden" required>
+                    <span class="form__text form__name">Детская игрушка</span>
+                    <span class="form__radio"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form__pad">
+            <div class="container">
+              <div class="form__fieldset">
+                <div class="form__titleBlock">
+                  <div class="form__title">Цвет</div>
+                  <div class="form__line"></div>
+                </div>
+                <div class="form__color">
+                  <label class="form__checkboxOption">
+                    <input type="checkbox" name="checkbox" class="form__hidden" checked>
+                    <span class="form__text form__name">Белый</span>
+                    <span class="form__checkbox"></span>
+                  </label>
+                  <label class="form__checkboxOption">
+                    <input type="checkbox" class="form__hidden" checked>
+                    <span class="form__text form__name">Серый</span>
+                    <span class="form__checkbox"></span>
+                  </label>
+                  <label class="form__checkboxOption">
+                    <input type="checkbox" class="form__hidden">
+                    <span class="form__text form__name">&laquo;Тиффани&raquo;</span>
+                    <span class="form__checkbox"></span>
+                  </label>
+                  <label class="form__checkboxOption">
+                    <input type="checkbox" class="form__hidden">
+                    <span class="form__text form__name">Черный</span>
+                    <span class="form__checkbox"></span>
+                  </label>
+                  <label class="form__checkboxOption">
+                    <input type="checkbox" class="form__hidden">
+                    <span class="form__text form__name">Розовый</span>
+                    <span class="form__checkbox"></span>
+                  </label>
+                  <label class="form__checkboxOption">
+                    <input type="checkbox" class="form__hidden">
+                    <span class="form__text form__name">Оранжевый</span>
+                    <span class="form__checkbox"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form__pad">
+            <div class="container">
+              <div class="form__fieldset">
+                <div class="form__titleBlock">
+                  <div class="form__title">ФИО</div>
+                  <div class="form__line"></div>
+                </div>
+                <div class="form__fioBlock">
+                    <div class="form__text form__fio">Имя:</div>
+                    <input type="text" class="form__text form__textInput" name="firstName" placeholder="Введите ваше имя*" required>
+                </div>
+                <div class="form__fioBlock">
+                    <div class="form__text form__fio">Фамилия:</div>
+                    <input type="text" class="form__text form__textInput" name="lastName" placeholder="Укажите фамилию*" required>
+                </div>
+                <div class="form__fioBlock">
+                    <div class="form__text form__fio">Отчество:</div>
+                    <input type="text" class="form__text form__textInput" name="middleName" placeholder="Отчество, если желаете">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form__pad">
+            <div class="container">
+              <div class="form__fieldset form__fieldset--short">
+                <div class="form__titleBlock">
+                  <div class="form__title">Тел</div>
+                  <div class="form__line"></div>
+                </div>
+                <div class="form__row">
+                  <input type="tel" class="form__text form__textInput form__textInput--withIcon" name="phone" placeholder="+7 XXX XX XX*" required>
+                  <div class="form__icon form__icon--phone"></div>
+                </div>
+
+                <div class="form__titleBlock">
+                  <div class="form__title">Email</div>
+                  <div class="form__line"></div>
+                </div>
+                <div class="form__row">
+                  <input type="email" class="form__text form__textInput form__textInput--withIcon" name="email" placeholder="Ваш email*" required>
+                  <div class="form__icon form__icon--email"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form__pad">
+            <div class="container">
+              <div class="form__fieldset">
+                <div class="form__titleBlock">
+                  <div class="form__title">Доп</div>
+                  <div class="form__line"></div>
+                </div>
+                <textarea class="form__textarea form__text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="form__pad">
+            <div class="container">
+              <div class="form__bottom">
+                  <div class="form__clarification">
+                  *Поля обязательны для заполнения
+                </div>
+                  <button type="submit" class="button form__submit">Отправить заказ</button>
+              </div>
+            </div>
+          </div>
+        </form>
       </div>
-    </header>
 
-    <div class="pageTitle">Вязание на заказ</div>
+      <footer class="footer">
+        <div class="footer__content container">
+          <div class="footer__logo"></div>
+          <div class="socials">
+            <a title="Инстаграмм" class="socials__social socials__social--insta" href=""></a>
+            <a title="Facebook" class="socials__social socials__social--fb" href=""></a>
+            <a title="Twitter" class="socials__social socials__social--twitter" href=""></a>
+          </div>
+          <div class="developedBy">
+            <a class="developedBy__link" href="https://htmlacademy.ru/" title="html academy">
+              <span class="developedBy__text">Разработано</span>
+              <span class="developedBy__icon"></span>
+            </a>
+          </div>
+        </div>
+      </footer>
 
-    <div class="form">
-      <form action="#" method="post">
-          <div class="form__decription">Мы&nbsp;будем рады воплотить в&nbsp;жизнь ваши пожелания! Заполните простую форму заказа и&nbsp;мы&nbsp;свяжемся с&nbsp;вам, чтобы уточнить детали</div>
-          <fieldset>
-            <div class="form__div">
-              <div class="form__title">Тип</div>
-            </div>
-            <div class="form__type">
-              <label class="form__option">
-                <input type="radio" name="radio-1" required>Аксессуар для интерьера
-              </label>
-              <label class="form__option">
-                <input type="radio" name="radio-2" required>Детская игрушка
-              </label>
-            </div>
-
-            <div class="form__div">
-              <div class="form__title">Цвет</div>
-            </div>
-            <div class="form__color">
-              <label class="form__option">
-                <input type="checkbox" name="checkbox-1" checked>Белый
-              </label>
-              <label class="form__option">
-                <input type="checkbox" name="checkbox-2" checked>Серый
-              </label>
-              <label class="form__option">
-                <input type="checkbox" name="checkbox-3">&laquo;Тиффани&raquo;
-              </label>
-              <label class="form__option">
-                <input type="checkbox" name="checkbox-4">Черный
-              </label>
-              <label class="form__option">
-                <input type="checkbox" name="checkbox-5">Розовый
-              </label>
-              <label class="form__option">
-                <input type="checkbox" name="checkbox-6">Оранжевый
-              </label>
-            </div>
-
-            <div class="form__div">
-              <div class="form__title">ФИО</div>
-            </div>
-            <div class="form__name">
-              <label>
-                Имя:
-                <input type="text" name="firstName" placeholder="Введите ваше имя*" required>
-              </label>
-            </div>
-            <div class="form__name">
-              <label>
-                Фамилия:
-                <input type="text" name="lastName" placeholder="Укажите фамилию*" required>
-              </label>
-            </div>
-            <div class="form__name">
-              <label>
-                Отчество:
-                <input type="text" name="middleName" placeholder="Отчество, если желаете">
-              </label>
-            </div>
-
-            <div class="form__div">
-              <div class="form__title">Тел</div>
-            </div>
-            <div class="form_row">
-              <input type="tel" name="phone" placeholder="+7 XXX XX XX*" required>
-              <div class="form_icon--phone"></div>
-            </div>
-
-            <div class="form__div">
-              <div class="form__title">Email</div>
-            </div>
-            <div class="form_row">
-              <input type="email" name="email" placeholder="Ваш email*" required>
-              <div class="form_icon--email"></div>
-            </div>
-
-            <div class="form__div">
-              <div class="">Доп</div>
-            </div>
-            <textarea class="form__textarea"></textarea>
-
-            <div class="form__clarification">
-              *Поля обязательны для заполнения
-            </div>
-          </fieldset>
-          <button type="submit" class="button">Заказать</button>
-      </form>
     </div>
 
-    <footer>
-      <div class="socials">
-        <a title="Инстаграмм" class="socials__social socials__social--insta" href="">Инстаграмм</a>
-        <a title="Facebook" class="socials__social socials__social--fb" href="">Facebook</a>
-        <a title="Twitter" class="socials__social socials__social--twitter" href="">Twitter</a>
-      </div>
-
-      <div class="developedBy">
-        <div class="developedBy__text">Разработано</div>
-        <a class="developedBy__link" href="https://htmlacademy.ru/" title="html academy">
-          <span class="developedBy__icon"></span>
-        </a>
-      </div>
-    </footer>
   </body>
 </html>

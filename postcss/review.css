@@ -12,15 +12,26 @@
         position: relative;
     }
 
+    @media all and (min-width: 1150px) {
+        padding-top: 70px;
+    }
+
     &__background {
-        background: url('../img/review@1x.jpg') no-repeat;
-        background-size: cover;
-        height: 100%;
-        left: -50px;
-        position: absolute;
-        top: 0;
-        width: 332px;
-        z-index: -1;
+        @media all and (min-width: 768px) {
+            background: url('../img/review@1x.jpg') no-repeat;
+            background-size: cover;
+            height: 100%;
+            left: -50px;
+            position: absolute;
+            top: 0;
+            width: 332px;
+            z-index: -1;
+        }
+
+        @media all and (min-width: 768px) {
+            left: 0;
+            width: 350px;
+        }
     }
 
     @media all and (min-width: 1150px) {
@@ -35,6 +46,10 @@
         @media all and (min-width: 768px) {
             order: -2;
             margin-bottom: 55px;
+        }
+
+        @media all and (min-width: 1150px) {
+            margin-bottom: 49px;
         }
     }
 
@@ -60,7 +75,8 @@
         }
 
         @media all and (min-width: 1150px) {
-            margin-top: 50px;
+            margin-top: 35px;
+            margin-bottom: 6px;
         }
     }
 
@@ -77,8 +93,9 @@
         }
 
         @media all and (min-width: 1150px) {
-            bottom: 60px;
-            right: 50px;
+            bottom: 65px;
+            right: 0;
+            width: 175px;
         }
     }
 
@@ -107,6 +124,9 @@
         @media all and (min-width: 768px) {
             order: -1;
             width: 175px;
+        }
+        @media all and (min-width: 1150px) {
+            margin-top: 10px;
         }
     }
 }

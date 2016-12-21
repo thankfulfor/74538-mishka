@@ -25,6 +25,9 @@ $active-color:              #d2f0eb;
 /*Main*/
 $font-weight-bold:          700;
 
+$main-font-size-xs:         13px;
+$main-line-height-xs:       24px;
+
 $main-font-size-s:          15px;
 $main-line-height-s:        30px;
 
@@ -33,8 +36,6 @@ $main-line-height-m:        30px;
 
 
 /*Title*/
-$title-font-weight:         700;
-
 $title-font-size-s:         25px;
 $title-line-height-s:       30px;
 
@@ -46,16 +47,13 @@ $title-line-height-l:       57px;
 
 
 /*Button*/
-$button-font-wight:         700;
 $button-font-size:          17px;
 $button-line-height:        16px;
 
 /*Catalog items*/
-$title-font-weight:          700;
-
-$title-line-height:          24px;
-$title-font-size-s:          17px;
-$title-font-size-m:          20px;
+$item-title-line-height:    24px;
+$item-title-font-size-s:    17px;
+$item-title-font-size-m:    20px;
 
 $desciption-line-height:    30px;
 $desciption-font-size-s:    13px;
@@ -64,3 +62,18 @@ $desciption-font-size-m:    15px;
 $price-line-height:         24px;
 $price-font-size-s:         15px;
 $price-font-size-m:         17px;
+
+/*Link colors*/
+$link-color:				#000;
+$link-color-hover:			#666;
+$link-color-active:			#b2b2b2;
+
+/*Form*/
+$form-title-font-size:		17px;
+$form-title-line-height:	16px;
+
+$form-input-font-size-s:	17px;
+$form-input-line-height-s:	18px;
+
+$form-input-font-size-m:	19px;
+$form-input-line-height-m:	18px;

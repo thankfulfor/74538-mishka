@@ -1,7 +1,6 @@
 @import 'container.css';
 
 .contacts {
-    /* @mixin center; */
     background-color: #fff;
     color: $main-color;
     padding-bottom: 40px;
@@ -14,6 +13,7 @@
     @media all and (min-width: 1150px) {
         min-height: 630px;
         padding-bottom: 100px;
+        padding-top: 223px;
         position: relative;
     }
 
@@ -28,6 +28,7 @@
 
         @media all and (min-width: 1150px) {
             justify-content: inherit;
+            margin-bottom: 31px;
         }
     }
 
@@ -43,8 +44,7 @@
 
         @media all and (min-width: 1150px) {
             order: -1;
-            margin-right: 60px;
-            margin-left: 70px;
+            margin: -7px 63px 0 63px;
         }
 
     }
@@ -62,7 +62,6 @@
     }
 
     &__table {
-
         border-spacing: 0;
         table-layout: fixed;
         width: 100%;
@@ -73,14 +72,14 @@
 
         tr {
             @media all and (min-width: 768px) {
-            display: inline-block;
-            width: 50%;
-            padding-right: 30px;
-            vertical-align: top;
+                display: inline-block;
+                padding-right: 30px;
+                vertical-align: top;
+                width: 50%;
             }
 
             @media all and (min-width: 1150px) {
-            display: inherit;
+                display: inherit;
             }
 
         }
@@ -89,12 +88,15 @@
 
     &__name {
         height: 50px;
-        width: 80px;
+        width: 75px;
         word-break: break-all;
+
+        @media all and (min-width: 1150px) {
+          height: 60px;
+        }
     }
 
     &__value {
-        width: 200px;
         word-break: break-all;
 
         @media all and (min-width: 768px) {
@@ -125,6 +127,7 @@
 
     &__mapContainer {
         margin: 30px -30px 0 -30px;
+        overflow: hidden;
         position: relative;
 
         @media all and (min-width: 768px) {
@@ -134,11 +137,11 @@
         }
 
         @media all and (min-width: 1150px) {
+            height: 456px;
             position: absolute;
-            top: 25px;
             right: 50px;
-            height: 460px;
-            width: 530px;
+            top: 115px;
+            width: 526px;
         }
     }
 

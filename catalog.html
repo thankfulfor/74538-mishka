@@ -8,9 +8,98 @@
   </head>
   <body>
     <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__content">
+            <a href="index.html" title="Мишка" class="header__logo"></a>
+            <div class="header__icon header__icon--opened"></div>
+            <nav class="header__menu header__menu--opened">
+              <ul class="header__items">
+                <li class="header__item">
+                  <a class="header__link header__link--catalog" href="catalog.html" title="Каталог товаров">Каталог товаров</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link header__link--order" href="form.html" title="Вязание на заказ">Вязание на заказ</a>
+                </li>
+                <li class="header__item">
+                  <a class="header__link" href="" title="Поиск по сайту">
+                    <span class="header__itemIcon header__itemIcon--search"></span>
+                    <span class="header__searchText">Поиск по сайту</span>
+                  </a>
+                </li>
+                <li class="header__item">
+                  <span class="header__itemIcon header__itemIcon--cart"></span>
+                  <a class="header__link header__link--cart" href="" title="Корзина: пока пуста">Корзина: пока пуста</a>
+                </li>
+                <li class="header__itemDesktop">
+                  <a class="header__link header__link--new" href="" title="Новые поступления">Новые поступления</a>
+                </li>
+                <li class="header__itemDesktop header__itemDesktop--sale">
+                  <a class="header__link" href="" title="Распродажа">Распродажа</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__freeDeliver">Бесплатная доставка по России</div>
+          </div>
+        </div>
+      </header>
+      <section class="simpleTitle">
+        <div class="container">
+          <h1 class="title">Каталог товаров</h1>
+        </div>
+      </section>
       <div class="container">
+        <section class="catalog">
+          <ul class="catalog__items">
+            <li class="catalog__item">
+              <div class="catalog__imageContainer">
+                <img class="catalog__image" alt="Зайчик-попрыгайчик" src="http://placehold.it/260x195" width="260" height="195">
+              </div>
+              <div class="catalog__description">
+              <div class="catalog__words">
+                <div class="catalog__name">Зайчик-попрыгайчик</div>
+              </div>
+                <div class="catalog__text">Рост 30 см, вес 200 г</div>
+                <div class="catalog__buy">
+                  <div class="catalog__price">1 200 руб.</div>
+                  <a class="catalog__toCart" title="Положить в корзину" href=""></a>
+                </div>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <div class="catalog__imageContainer">
+                <img class="catalog__image" alt="Козринка для белья" src="http://placehold.it/260x195" width="260" height="195">
+              </div>
+              <div class="catalog__description">
+                <div class="catalog__words">
+                  <div class="catalog__name">Корзинка для белья</div>
+                  <div class="catalog__text">Диаметр 15 см, высота 10 см</div>
+                </div>
+                <div class="catalog__buy">
+                  <div class="catalog__price">690 руб.</div>
+                  <a class="catalog__toCart" title="Положить в корзину" href=""></a>
+                </div>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <div class="catalog__imageContainer">
+                <img class="catalog__image" alt="Большая корзинка для игрушек" src="http://placehold.it/260x195" width="260" height="195">
+              </div>
+              <div class="catalog__description">
+              <div class="catalog__words">
+                <div class="catalog__name">Большая корзинка для&nbsp;игрушек</div>
+                <div class="catalog__text">Диаметр 30 см, высота 30 см</div>
+              </div>
+                <div class="catalog__buy">
+                  <div class="catalog__price">1 500 руб.</div>
+                  <a class="catalog__toCart" title="Положить в корзину" href=""></a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
         <section class="production">
-          <div class="production__title catalog__title">Процесс производства</div>
+          <div class="production__title">Процесс производства</div>
           <div class="production__previewPicture">
             <div class="production__previewPlayIcon"></div>
           </div>

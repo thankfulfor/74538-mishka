@@ -1,0 +1,9 @@
+.simpleTitle {
+    background-color: $pad-color;
+    padding: 78px 0 75px;
+    text-align: center;
+
+    @media all and (min-width: 768px) {
+        padding: 92px 0 77px;
+    }
+}
