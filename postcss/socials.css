@@ -12,24 +12,33 @@
         background-repeat: no-repeat;
         display: inline-block;
 
+        path {
+            fill: #000;
+        }
+
+        &:hover path {
+            fill: #46c1ae;
+        }
+
+        &:active path {
+            fill: #cae6e2;
+        }
+
         & + & {
             margin-left: 40px;
         }
 
         &--insta {
-            background-image: url('../img/icon-insta.svg');
             height: 20px;
             width: 21px;
         }
 
         &--fb {
-            background-image: url('../img/icon-fb.svg');
             height: 28px;
             width: 15px;
         }
 
         &--twitter {
-            background-image: url('../img/icon-twitter.svg');
             height: 20px;
             width: 23px;
 

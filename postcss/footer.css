@@ -19,8 +19,19 @@
 
     &__logo {
 
+        path {
+            fill: #000;
+        }
+
+        &:hover path {
+            fill: #46c1ae;
+        }
+
+        &:active path {
+            fill: #cae6e2;
+        }
+
         @media all and (min-width: 768px) {
-            background: url('../img/logo-mobile.svg') no-repeat;
             height: 35px;
             margin-right: 100px;
             width: 86px;

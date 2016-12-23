@@ -48,10 +48,6 @@
         line-height: auto;
         margin-top: 30px;
 
-        &:first-child {
-            margin-top: 0;
-        }
-
         @media all and (min-width: 768px) {
             font-size: 20px;
             margin-top: 55px;
@@ -70,8 +66,10 @@
     }
 
     &__text {
+        font-size: $main-font-size-m;
 
         @media all and (min-width: 768px) {
+            font-size: $main-font-size-l;
             width: 300px;
         }
 
@@ -80,40 +78,21 @@
     &__icon {
         background-repeat: no-repeat;
         margin-bottom: 15px;
-        height: 37px;
 
         @media all and (min-width: 1150px) {
           margin-bottom: 8px;
         }
+    }
 
-        &--eco {
-            background-image: url('../img/icon-feature-1.svg');
-            width: 32px;
+    &__icon path {
+        fill: $accent-color;
+
+        @media all and (min-width: 768px) {
+            fill: #000;
         }
 
-        &--style {
-            background-image: url('../img/icon-feature-3.svg');
-            width: 47px;
-        }
-
-        &--likes {
-            background-image: url('../img/icon-feature-5.svg');
-            width: 54px;
-        }
-
-        &--with-love {
-            background-image: url('../img/icon-feature-2.svg');
-            width: 34px;
-        }
-
-        &--domestic {
-            background-image: url('../img/icon-feature-4.svg');
-            width: 54px;
-        }
-
-        &--gift {
-            background-image: url('../img/icon-feature-6.svg');
-            width: 33px;
+        @media all and (min-width: 1150px) {
+            fill: $accent-color;
         }
     }
 }

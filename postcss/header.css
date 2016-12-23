@@ -19,25 +19,44 @@
         }
     }
 
+    .no-js&__content {
+        align-items: flex-start;
+        height: auto;
+    }
+
     &__logo {
-        background: url('../img/logo-mobile.svg') no-repeat;
-        height: 35px;
         margin: 0 auto;
+
+        @media all and (min-width: 768px) {
+            margin: auto 0;
+        }
+
+        @media all and (min-width: 1150px) {
+            margin-left: 46%;
+        }
+    }
+
+    &__logo img {
+        height: 35px;
         width: 86px;
 
         @media all and (min-width: 768px) {
-            background-image: url('../img/logo-tablet.svg');
             height: 46px;
-            margin: auto 0;
             width: 112px;
         }
 
         @media all and (min-width: 1150px) {
-            background-image: url('../img/logo-desktop.svg');
             height: 73px;
-            margin-left: 46%;
             width: 148px;
         }
+    }
+
+    &__logo:hover {
+        opacity: 0.6;
+    }
+
+    &__logo:active {
+        opacity: 0.3;
     }
 
     &__icon {
@@ -52,12 +71,19 @@
 
     &__icon--opened {
         background-image: url('../img/icon-menu-close.svg');
-        width: 22px;
-        height: 20px;
+        width: 29px;
+        height: 25px;
 
         @media all and (min-width: 768px) {
             display: none;
         }
+    }
+
+
+    .no-js&__menu {
+        position: static;
+        width: 320px;
+        display: block;
     }
 
     &__menu {
@@ -66,10 +92,12 @@
         position: absolute;
         right: -30px;
         top: 80px;
+        display: none;
 
-        &--closed {
-            display: none;
+        &--opened {
+            display: block;
         }
+
 
         @media all and (min-width: 768px) {
             background-color: transparent;
@@ -209,19 +237,19 @@
         height: 19px;
         left: 30px;
         position: absolute;
-        top: 30px;
+        top: 6px;
         width: 20px;
 
-        @media all and (min-width: 768px) {
-            top: 36px;
+        & path {
+            fill: #d5d5d5;
         }
 
-        &--search {
-            background-image: url('../img/icon-search.svg');
+        &:hover path {
+            fill: #63d1bb;
         }
 
-        &--cart {
-            background-image: url('../img/icon-cart.svg');
+        &:active path {
+            fill: #d0f1ea;
         }
     }
 

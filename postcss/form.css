@@ -47,7 +47,7 @@
     }
 
     &__fieldset--short {
-        padding-right: 60px;
+        width: 820px;
     }
 
     &__pad:nth-child(2n) {
@@ -379,7 +379,7 @@
             flex-basis: 485px;
         }
 
-        @media all and (min-width: 768px) {
+        @media all and (min-width: 1150px) {
             flex-basis: 710px;
         }
     }
