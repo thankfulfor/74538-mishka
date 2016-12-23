@@ -12,8 +12,8 @@
         <div class="container">
           <div class="header__content">
             <a href="index.html" title="Мишка" class="header__logo"></a>
-            <div class="header__icon header__icon--opened"></div>
-            <nav class="header__menu header__menu--opened">
+            <div class="header__icon header__icon--closed"></div>
+            <nav class="header__menu header__menu--closed">
               <ul class="header__items">
                 <li class="header__item">
                   <a class="header__link header__link--catalog" href="catalog.html" title="Каталог товаров">Каталог товаров</a>
@@ -45,7 +45,7 @@
       </header>
       <section class="simpleTitle">
         <div class="container">
-          <h1 class="title">Каталог товаров</h1>
+          <h1 class="title title--pageHeader">Каталог товаров</h1>
         </div>
       </section>
       <div class="container">
@@ -53,7 +53,11 @@
           <ul class="catalog__items">
             <li class="catalog__item">
               <div class="catalog__imageContainer">
-                <img class="catalog__image" alt="Зайчик-попрыгайчик" src="http://placehold.it/260x195" width="260" height="195">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                  <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
+                </picture>
               </div>
               <div class="catalog__description">
               <div class="catalog__words">
@@ -68,7 +72,11 @@
             </li>
             <li class="catalog__item">
               <div class="catalog__imageContainer">
-                <img class="catalog__image" alt="Козринка для белья" src="http://placehold.it/260x195" width="260" height="195">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                  <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Корзинка для белья">
+                </picture>
               </div>
               <div class="catalog__description">
                 <div class="catalog__words">
@@ -83,7 +91,11 @@
             </li>
             <li class="catalog__item">
               <div class="catalog__imageContainer">
-                <img class="catalog__image" alt="Большая корзинка для игрушек" src="http://placehold.it/260x195" width="260" height="195">
+                <picture>
+                  <source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                  <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Корзинка для белья">
+                </picture>
               </div>
               <div class="catalog__description">
               <div class="catalog__words">
@@ -100,7 +112,12 @@
         </section>
         <section class="production">
           <div class="production__title">Процесс производства</div>
-          <div class="production__previewPicture">
+          <div class="production__previewContainer">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
+            </picture>
             <div class="production__previewPlayIcon"></div>
           </div>
           <div class="production__video"></div>

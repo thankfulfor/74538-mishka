@@ -5,9 +5,13 @@ body {
 }
 
 .title {
-    font-size: $title-font-size-s;
+    font-size: $title-font-size-xs;
     font-weight: $font-weight-bold;
-    line-height: $title-line-height-s;
+    line-height: $title-line-height-xs;
+
+    &--pageHeader {
+        font-size: $title-font-size-s;
+    }
 
     @media all and (min-width: 768px) {
         font-size: $title-font-size-m;
@@ -23,6 +27,10 @@ body {
 .text {
     font-size: $main-font-size-s;
     line-height: $main-line-height-s;
+
+    &--itemOfWeek {
+        line-height: $main-line-height-xs;
+    }
 
     @media all and (min-width: 768px) {
         font-size: $main-font-size-m;

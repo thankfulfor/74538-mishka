@@ -31,13 +31,15 @@ $main-line-height-xs:       24px;
 $main-font-size-s:          15px;
 $main-line-height-s:        30px;
 
-$main-font-size-m:          17px;
+$main-font-sizTe-m:          17px;
 $main-line-height-m:        30px;
 
 
 /*Title*/
-$title-font-size-s:         25px;
-$title-line-height-s:       30px;
+$title-font-size-xs:        25px;
+$title-line-height-xs:      30px;
+
+$title-font-size-s:         27px;
 
 $title-font-size-m:         43px;
 $title-line-height-m:       50px;

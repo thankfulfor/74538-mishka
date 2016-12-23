@@ -38,11 +38,6 @@
         }
     }
 
-    &__image {
-        height: 100%;
-        width: auto;
-    }
-
     &__description {
         padding: 30px;
 
