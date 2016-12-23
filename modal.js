@@ -1,7 +1,7 @@
 var popup = document.querySelector('.modal');
-var button = document.querySelector('.itemOfWeek__orderButton');
+var button = document.querySelector('.js-order-button');
 
-console.log(popup)
+button.preventDefault;
 button.addEventListener('click', showPopup);
 
 function showPopup() {

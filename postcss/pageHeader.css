@@ -2,6 +2,26 @@
 
 .pageHeader {
     background-color: #f8f8f8;
+    position: relative;
+
+    &__wave {
+        @media all and (min-width: 768px) {
+            background: url(../img/bg-zigzag-fill.svg) center bottom;
+            background-repeat: repeat-x;
+            background-size: contain;
+            bottom: -17px;
+            height: 84px;
+            left: 0;
+            position: absolute;
+            right: 0;
+            z-index: 2;
+        }
+
+        @media all and (min-width: 1150px) {
+            height: 32px;
+        }
+    }
+
 
     &__top {
         background: url('../img/hero-mobile@1x.jpg') center 22% no-repeat;
