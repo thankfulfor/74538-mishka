@@ -32,24 +32,11 @@
         position: relative;
         width: 190px;
 
-        &::before {
-            background: url('../img/icon-video.svg') no-repeat;
-            content: '';
-            display: block;
-            height: 32px;
-            left: -30px;
-            margin-left: 32px;
-            position: absolute;
-            top: 0;
-            width: 32px;
-        }
-
         @media all and (min-width: 768px) {
             font-size: $item-title-font-size-m;
             left: 0;
             padding-left: 63px;
             width: auto;
-
 
             &::before {
                 top: -6px;
@@ -60,12 +47,30 @@
             margin-bottom: 40px;
             padding: 40px 0 0;
             width: 140px;
+        }
+    }
 
-            &::before {
-                margin-left: 0;
-                top: 0;
-                left: 0;
-            }
+    &__titleIcon {
+        display: block;
+        height: 32px;
+        left: -30px;
+        margin-left: 32px;
+        position: absolute;
+        top: 0;
+        width: 32px;
+
+        path {
+            fill: $accent-color;
+        }
+
+        @media all and (min-width: 768px) {
+            top: -6px;
+        }
+
+        @media all and (min-width: 1150px) {
+            margin-left: 0;
+            top: 0;
+            left: 0;
         }
     }
 
@@ -107,6 +112,7 @@
         }
 
         &:active {
+            opacity: 0.8;
             transform: scale(0.8);
             transition: all 0.5s;
         }

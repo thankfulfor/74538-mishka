@@ -54,6 +54,7 @@
             padding-right: 35px;
             width: 330px;
 
+            &:first-child,
             &:nth-child(4) {
                 margin-top: 0;
             }
@@ -67,6 +68,7 @@
 
     &__text {
         font-size: $main-font-size-m;
+        line-height: 20px;
 
         @media all and (min-width: 768px) {
             font-size: $main-font-size-l;
@@ -76,11 +78,41 @@
     }
 
     &__icon {
-        background-repeat: no-repeat;
-        margin-bottom: 15px;
 
         @media all and (min-width: 1150px) {
-          margin-bottom: 8px;
+            margin-bottom: 8px;
+        }
+
+        &--eco {
+            margin-bottom: 15px;
+            width: 32px;
+        }
+
+        &--style {
+            margin-bottom: 21px;
+            width: 47px;
+        }
+
+        &--likes {
+            margin-bottom: 15px;
+            margin-left: 8px;
+            width: 54px;
+        }
+
+        &--with-love {
+            margin-bottom: 15px;
+            width: 34px;
+            margin-left: 5px;
+        }
+
+        &--domestic {
+            margin-bottom: 28px;
+            width: 54px;
+        }
+
+        &--gift {
+            margin-bottom: 11px;
+            width: 33px;
         }
     }
 
