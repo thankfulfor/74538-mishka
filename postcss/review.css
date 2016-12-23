@@ -14,6 +14,8 @@
 
     @media all and (min-width: 1150px) {
         padding-top: 70px;
+        padding-bottom: 105px;
+        padding-left: 175px;
     }
 
     &__background {
@@ -24,20 +26,17 @@
             left: -50px;
             position: absolute;
             top: 0;
-            width: 332px;
+            width: 350px;
             z-index: -1;
         }
 
-        @media all and (min-width: 768px) {
-            left: 0;
-            width: 350px;
+        @media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+            background-image: url('../img/review@2x.jpg');
         }
-    }
 
-    @media all and (min-width: 1150px) {
-        background-position-x: 50px;
-        padding-bottom: 105px;
-        padding-left: 175px;
+        @media all and (min-width: 1150px) {
+            left: 0;
+        }
     }
 
     &__header {
