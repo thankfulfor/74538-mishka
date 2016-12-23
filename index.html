@@ -166,7 +166,11 @@
             </table>
             <div class="contacts__mapContainer">
               <div class="contacts__arrow"></div>
-              <img class="contacts__map" alt="Карта" src="img/map-mobile%401x.jpg">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+                <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта" class="contacts__map">
+              </picture>
             </div>
             <a class="button contacts__writeUs" href="" title="Напишите нам">Напишите нам</a>
           </div>
