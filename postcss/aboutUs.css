@@ -21,9 +21,6 @@
         @media all and (min-width: 768px) {
             margin-bottom: 50px;
         }
-
-        @media all and (min-width: 1150px) {
-        }
     }
 
     &__list {
@@ -118,13 +115,5 @@
 
     &__icon path {
         fill: $accent-color;
-
-        @media all and (min-width: 768px) {
-            fill: #000;
-        }
-
-        @media all and (min-width: 1150px) {
-            fill: $accent-color;
-        }
     }
 }
