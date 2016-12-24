@@ -162,21 +162,6 @@
         }
     }
 
-    &__map {
-
-        @media all and (min-width: 768px) {
-            height: 900px;
-            margin-top: -290px;
-            width: 100%;
-        }
-
-        @media all and (min-width: 1150px) {
-            height: 460px;
-            margin-top: 0;
-            width: 530px;
-        }
-    }
-
     &__writeUs {
         margin-top: 40px;
 

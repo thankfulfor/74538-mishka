@@ -4,6 +4,9 @@
     text-align: center;
 
     @media all and (min-width: 768px) {
-        padding: 92px 0 77px;
+        background: $pad-color url('../img/bg-zigzag-fill.svg') center bottom;
+        background-repeat: repeat-x;
+        background-size: contain;
+        padding: 92px 0;
     }
 }

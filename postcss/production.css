@@ -1,7 +1,6 @@
 .production {
 
     border: 1px solid #ececec;
-    padding: 30px;
     margin-bottom: 60px;
     margin-top: 30px;
 
@@ -28,28 +27,16 @@
         font-weight: $font-weight-bold;
         left: 25px;
         margin-bottom: 30px;
+        margin-top: 30px;
         padding-left: 50px;
         position: relative;
         width: 190px;
-
-        &::before {
-            background: url('../img/icon-video.svg') no-repeat;
-            content: '';
-            display: block;
-            height: 32px;
-            left: -30px;
-            margin-left: 32px;
-            position: absolute;
-            top: 0;
-            width: 32px;
-        }
 
         @media all and (min-width: 768px) {
             font-size: $item-title-font-size-m;
             left: 0;
             padding-left: 63px;
             width: auto;
-
 
             &::before {
                 top: -6px;
@@ -60,24 +47,37 @@
             margin-bottom: 40px;
             padding: 40px 0 0;
             width: 140px;
-
-            &::before {
-                margin-left: 0;
-                top: 0;
-                left: 0;
-            }
         }
     }
 
-    &__previewPicture {
-        background: url('../img/video-mobile@1x.jpg') no-repeat;
-        height: 150px;
-        width: 198px;
-        margin: 0 0 30px 0;
-        display: flex;
+    &__titleIcon {
+        display: block;
+        height: 32px;
+        left: -30px;
+        margin-left: 32px;
+        position: absolute;
+        top: 0;
+        width: 32px;
+
+        path {
+            fill: $accent-color;
+        }
 
         @media all and (min-width: 768px) {
-            background-size: cover;
+            top: -6px;
+        }
+
+        @media all and (min-width: 1150px) {
+            margin-left: 0;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__previewContainer {
+        position: relative;
+
+        @media all and (min-width: 768px) {
             height: 455px;
             margin: 0 0 40px -40px;
             order: -1;
@@ -85,22 +85,26 @@
         }
 
         @media all and (min-width: 1150px) {
-            margin: 0 80px 0 0;
-            width: 685px;
-            position: absolute;
             left: 0;
+            margin: 0 80px 0 0;
+            position: absolute;
             top: 0;
+            width: 685px;
         }
     }
 
     &__previewPlayIcon,
     &__previewPlayIcon:visited {
-        background: url('../img/icon-play.svg') no-repeat;
         background-size: cover;
+        background: url('../img/icon-play.svg') no-repeat;
         height: 77px;
-        margin: auto;
-        width: 101px;
+        left: 50%;
+        margin-left: -50.5px;
+        margin-top: -38.5px;
+        position: absolute;
+        top: 50%;
         transition: all 0.5s;
+        width: 101px;
 
         &:hover {
             transform: scale(1.2);
@@ -108,18 +112,20 @@
         }
 
         &:active {
+            opacity: 0.8;
             transform: scale(0.8);
             transition: all 0.5s;
         }
     }
 
     &__text {
-        margin-bottom: 30px;
+        padding: 30px;
         font-size: $main-font-size-s;
         line-height: $main-line-height-s;
 
         @media all and (min-width: 768px) {
           margin-bottom: 37px;
+          padding: 0;
         }
 
         @media all and (min-width: 1150px) {
@@ -129,6 +135,12 @@
     }
 
     &__button {
+        margin: 0 30px 30px;
+
+        @media all and (min-width: 768px) {
+            margin: 0;
+        }
+
         @media all and (min-width: 1150px) {
             width: 230px;
         }

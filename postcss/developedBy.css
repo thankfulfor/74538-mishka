@@ -12,6 +12,22 @@
         font-weight: 700;
         text-decoration: none;
         vertical-align: middle;
+
+        &:active {
+            color: #a8a8a8;
+        }
+    }
+
+    &__link svg {
+        fill: #63d1bb;
+    }
+
+    &__link:hover svg {
+        fill: #46c1ae;
+    }
+
+    &__link:active svg {
+        fill: #bde3dd;
     }
 
     &__text {
