@@ -11,13 +11,18 @@
             align-items: center;
             display: flex;
             justify-content: space-between;
-            padding-bottom: 54px;
-            padding-top: 54px;
+            padding: 54px 0 41px;
         }
 
+        @media all and (min-width: 1150px) {
+            padding-top: 48px;
+        }
     }
 
     &__logo {
+        display: none;
+
+
 
         path {
             fill: #000;
@@ -33,8 +38,9 @@
 
         @media all and (min-width: 768px) {
             height: 35px;
-            margin-right: 100px;
-            width: 86px;
+            margin-right: 77px;
+            width: 103px;
+            display: block;
         }
     }
 }

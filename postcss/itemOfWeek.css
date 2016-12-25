@@ -30,7 +30,7 @@
         @media all and (min-width: 1150px) {
             justify-content: inherit;
             margin-bottom: 0;
-            padding-left: 45px;
+            padding-left: 55px;
         }
     }
 
@@ -72,7 +72,7 @@
         }
 
         @media all and (min-width: 1150px) {
-            padding-left: 175px;
+            padding-left: 183px;
             margin-top: 50px;
         }
 
@@ -140,8 +140,9 @@
         }
 
         @media all and (min-width: 1150px) {
-            margin-top: -94px;
             height: 630px;
+            right: -7px;
+            top: 72px;
             width: 525px;
             z-index: -1;
         }
