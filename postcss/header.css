@@ -29,8 +29,8 @@
         z-index: 1;
 
         @media all and (min-width: 768px) {
-           margin-left: 6px;
-           margin-top: 22px;
+            margin-left: 6px;
+            margin-top: 22px;
         }
 
         @media all and (min-width: 1150px) {

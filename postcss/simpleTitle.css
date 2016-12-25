@@ -9,7 +9,7 @@
         background-size: 800px;
         padding: 92px 0;
     }
-    
+
     @media all and (min-width: 1150px) {
         padding: 92px 0 121px;
         background-size: 1150px;
