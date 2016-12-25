@@ -6,12 +6,12 @@
 
     @media all and (min-width: 768px) {
         padding-top: 60px;
-        padding-bottom: 50px;
+        padding-bottom: 34px;
     }
 
     @media all and (min-width: 1150px) {
-        padding-top: 135px;
-        padding-bottom: 50px;
+        padding-top: 103px;
+        padding-bottom: 37px;
     }
 
     &__description {
@@ -21,33 +21,13 @@
         @media all and (min-width: 768px) {
             font-size: $main-font-size-m;
             line-height: $main-line-height-m;
+            padding-left: 8px;
         }
 
         @media all and (min-width: 1150px) {
-            padding-left: 170px;
+            padding-left: 180px;
             padding-right: 150px;
         }
-    }
-
-    &__fieldset {
-        padding-top: 30px;
-
-        @media all and (min-width: 768px) {
-            display: flex;
-            padding-top: 60px;
-            padding-bottom: 40px;
-            flex-wrap: wrap;
-        }
-
-        @media all and (min-width: 1150px) {
-            margin-left: 60px;
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
-    }
-
-    &__fieldset--short {
-        width: 820px;
     }
 
     &__pad:nth-child(2n) {
@@ -62,6 +42,56 @@
         }
     }
 
+    &__fieldset {
+        padding-top: 30px;
+
+        @media all and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 58px 0 52px 9px;
+        }
+
+        @media all and (min-width: 1150px) {
+            margin-left: 66px;
+            padding-top: 58px;
+            padding-bottom: 50px;
+        }
+    }
+
+    &__fieldset--color {
+        @media all and (min-width: 768px) {
+            padding: 50px 0 52px 9px;
+        }
+    }
+
+    &__fieldset--initials {
+        @media all and (min-width: 768px) {
+            padding: 63px 0 52px;
+        }
+    }
+
+    &__fieldset--phone {
+        @media all and (min-width: 768px) {
+            width: 676px;
+        }
+
+        @media all and (min-width: 1150px) {
+            width: 820px;
+            margin-left: 61px;
+            padding-top: 61px;
+        }
+    }
+
+    &__fieldset--additional {
+        @media all and (min-width: 768px) {
+            padding: 48px 0 53px 9px;
+        }
+
+        @media all and (min-width: 1150px) {
+            padding: 48px 0 51px 9px;
+        }
+    }
+
     &__titleBlock {
         display: flex;
         padding-bottom: 35px;
@@ -69,21 +99,54 @@
         @media all and (min-width: 768px) {
             display: block;
             flex: 0 0 165px;
-            padding-top: 15px;
+            padding-top: 6px;
             padding-bottom: 0;
         }
 
         @media all and (min-width: 1150px) {
-            flex-basis: 105px;
+            flex-basis: 108px;
+            padding-top: 0;
+        }
+    }
+
+    &__titleBlock--type {
+        @media all and (min-width: 768px) {
+            padding-top: 17px;
+        }
+    }
+
+    &__titleBlock--color {
+        @media all and (min-width: 768px) {
+            padding-top: 18px;
+        }
+    }
+
+    &__titleBlock--initials {
+        @media all and (min-width: 768px) {
+            padding-left: 7px;
+            flex-basis: 174px;
+        }
+
+        @media all and (min-width: 1150px) {
+            flex-basis: 119px;
+            padding-left: 2px;
+            padding-top: 4px;
+        }
+    }
+
+    &__titleBlock--additional {
+        @media all and (min-width: 768px) {
+            padding-top: 17px;
         }
     }
 
     &__title {
-        font-size: $form-title-font-size;
-        line-height: $form-title-line-height;
         color: $accent-color;
-        text-transform: uppercase;
+        font-size: $form-title-font-size;
         font-weight: $font-weight-bold;
+        line-height: $form-title-line-height;
+        text-transform: uppercase;
+        white-space: nowrap;
     }
 
     &__line {
@@ -112,7 +175,7 @@
     &__checkboxOption + &__checkboxOption {
         margin-top: 22px;
 
-        @media all and (min-width: 1150px) {
+        @media all and (min-width: 768px) {
             margin-top: 25px;
         }
     }
@@ -120,6 +183,7 @@
     &__text {
         font-size: $form-input-font-size-s;
         line-height: $form-input-line-height-s;
+        font-weight: $font-weight-bold;
 
         @media all and (min-width: 768px) {
             font-size: $form-input-font-size-m;
@@ -147,6 +211,7 @@
 
         @media all and (min-width: 768px) {
             height: 50px;
+            margin-right: 30px;
             width: 50px;
         }
 
@@ -198,6 +263,22 @@
         }
     }
 
+    &__checkboxOption:nth-child(2n+1) {
+        @media all and (min-width: 768px) {
+            width: 263px;
+        }
+    }
+
+    &__checkboxOption:nth-child(2n) {
+        @media all and (min-width: 768px) {
+            width: 190px;
+        }
+
+        @media all and (min-width: 1150px) {
+            width: 263px;
+        }
+    }
+
     &__checkboxOption:nth-child(2) {
         @media all and (min-width: 768px) {
             margin-top: 0;
@@ -230,9 +311,9 @@
         }
 
         @media all and (min-width: 768px) {
-            height: 50px;
-            width: 50px;
-            margin-right: 33px;
+            height: 51px;
+            margin-right: 29px;
+            width: 53px;
         }
     }
 
@@ -261,56 +342,64 @@
         display: inline-block;
     }
 
-    &__fioBlock {
-
-        & + & {
-            margin-top: 30px;
-        }
+    &__initialsBlock {
 
         @media all and (min-width: 768px) {
-            flex-basis: 485px;
+            flex-basis: 501px;
             display: flex;
             align-items: baseline;
 
         }
 
         @media all and (min-width: 1150px) {
-            flex-basis: 710px;
+            flex-basis: 700px;
         }
     }
 
-    &__fioBlock:nth-child(3),
-    &__fioBlock:nth-child(4) {
+    &__initialsBlock + &__initialsBlock {
+            margin-top: 30px;
+
+            @media all and (min-width: 768px) {
+                margin-top: 38px;
+            }
+        }
+
+    &__initialsBlock:nth-child(3),
+    &__initialsBlock:nth-child(4) {
 
         @media all and (min-width: 768px) {
-            margin-left: 165px;
+            margin-left: 174px;
         }
 
         @media all and (min-width: 1150px) {
-            margin-left: 100px;
+            margin-left: 118px;
         }
     }
 
-    &__fio {
+    &__initials {
         margin-bottom: 15px;
         font-weight: $font-weight-bold;
 
         @media all and (min-width: 768px) {
-            margin-right: 15px;
+            margin-right: 26px;
         }
 
         @media all and (min-width: 1150px) {
-            margin-right: 37px;
+            margin-right: 25px;
         }
     }
 
     &__textInput {
+        background-color: transparent;
         border: none;
+        border-bottom: 2px solid #000;
         font-weight: 400;
         padding: 0 0 15px;
-        border-bottom: 2px solid #000;
         width: 100%;
-        background-color: transparent;
+
+        @media all and (min-width: 768px) {
+            padding-left: 15px;
+        }
 
         &:hover,
         &:focus {
@@ -319,7 +408,7 @@
         }
 
         &--withIcon {
-            padding-right: 45px;
+            padding-right: 65px;
         }
     }
 
@@ -327,16 +416,16 @@
         position: relative;
 
         @media all and (min-width: 768px) {
-            flex-basis: 485px;
+            flex-basis: 501px;
         }
 
         @media all and (min-width: 1150px) {
-            flex-basis: 710px;
+            flex-basis: 700px;
         }
 
         &:nth-child(4) {
             @media all and (min-width: 768px) {
-                margin-top: 45px;
+                margin-top: 38px;
             }
         }
     }
@@ -345,7 +434,11 @@
         margin-top: 30px;
 
         @media all and (min-width: 768px) {
-            margin-top: 45px;
+            margin-top: 35px;
+        }
+
+        @media all and (min-width: 1150px) {
+            margin-top: 41px;
         }
     }
 
@@ -357,19 +450,32 @@
         right: 0;
         background-repeat: no-repeat;
 
-        &&--phone {
-            background-image: url('../img/icon-phone.svg');
+        path {
+            fill: #ccc;
         }
+    }
 
-        &&--email {
-            background-image: url('../img/icon-mail.svg');
-            top: -2px;
-            right: 5px;
+    &__icon--phone {
+
+        @media all and (min-width: 768px) {
+            right: 17px;
+        }
+    }
+
+    &__icon--email {
+        top: -2px;
+        right: 5px;
+
+        @media all and (min-width: 768px) {
+            right: 17px;
         }
     }
 
     &__textarea {
         border: 2px solid #000;
+        flex-grow: 1;
+        font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+        font-weight: 400;
         height: 140px;
         padding: 15px;
         resize: none;
@@ -380,20 +486,23 @@
         }
 
         @media all and (min-width: 1150px) {
-            flex-basis: 710px;
+            flex-basis: 700px;
+            flex-grow: 0;
         }
     }
 
     &__bottom {
         @media all and (min-width: 768px) {
+            align-items: flex-start;
             display: flex;
             justify-content: space-between;
+            margin-left: 8px;
             max-width: 850px;
         }
 
         @media all and (min-width: 1150px) {
-            margin-left: 165px;
-            margin-right: 160px;
+            margin-left: 182px;
+            margin-right: 166px;
         }
     }
 
@@ -401,9 +510,14 @@
         margin: 20px 0 30px;
 
         @media all and (min-width: 768px) {
+            flex: 0 0 300px;
+            letter-spacing: 0.5px;
+            margin-top: 16px;
             text-align: right;
-            margin: 20px 0 0;
-            flex-grow: 1;
+        }
+
+        @media all and (min-width: 1150px) {
+            margin-top: 13px;
         }
     }
 

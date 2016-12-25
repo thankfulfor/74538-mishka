@@ -29,11 +29,13 @@
         z-index: 1;
 
         @media all and (min-width: 768px) {
-            margin: auto 0;
+           margin-left: 6px;
+           margin-top: 22px;
         }
 
         @media all and (min-width: 1150px) {
-            margin-left: 46%;
+            margin-left: 458px;
+            margin-top: 8px;
         }
     }
 
@@ -99,7 +101,6 @@
             display: block;
         }
 
-
         @media all and (min-width: 768px) {
             background-color: transparent;
             display: block;
@@ -125,10 +126,12 @@
 
         @media all and (min-width: 768px) {
             display: flex;
+            width: 676px;
         }
 
         @media all and (min-width: 1150px) {
             justify-content: space-between;
+            width: 1057px;
         }
     }
 
@@ -146,25 +149,30 @@
             border: 0;
             height: 60px;
             line-height: 60px;
-            margin-top: 90px;
-            padding-left: 0;
+            margin-top: 88px;
+            padding-left: 6px;
             width: 200px;
         }
 
         @media all and (min-width: 1150px) {
             height: 90px;
-            line-height: 90px;
+            line-height: 80px;
             margin-top: 0;
-            padding-left: 0;
-            width: 185px;
+            padding-left: 7px;
+            width: 191px;
         }
     }
 
     &__item:nth-child(2) {
+        @media all and (min-width: 768px) {
+            padding-left: 13px;
+        }
+
         @media all and (min-width: 1150px) {
             border-left: 1px solid #ececec;
             margin-right: auto;
-            padding-left: 33px;
+            padding-left: 34px;
+            line-height: 85px;
             width: 200px;
         }
     }
@@ -187,7 +195,7 @@
         @media all and (min-width: 768px) {
             border: 0;
             height: 90px;
-            line-height: 90px;
+            line-height: 87px;
             padding-left: 85px;
             width: 313px;
         }
@@ -238,7 +246,7 @@
         height: 19px;
         left: 30px;
         position: absolute;
-        top: 6px;
+        top: 5px;
         width: 20px;
 
         & path {
@@ -251,6 +259,11 @@
 
         &:active path {
             fill: #d0f1ea;
+        }
+
+        @media all and (min-width: 1150px) {
+            top: 3px;
+
         }
     }
 
@@ -266,12 +279,13 @@
         @media all and (min-width: 768px) {
             display: block;
             font-size: $main-font-size-s;
+            margin-right: -16px;
             margin-top: 110px;
             width: 231px;
         }
 
         @media all and (min-width: 1150px) {
-            margin-right: 0;
+            margin-right: -6px;
             margin-top: 108px;
         }
     }
@@ -282,12 +296,13 @@
         @media all and (min-width: 1150px) {
             display: block;
             position: absolute;
-            left: 0;
-            top: 108px;
+            left: 8px;
+            top: 107px;
+            width: 160px;
         }
 
         &--sale {
-            left: 220px;
+            left: 226px;
         }
     }
 }

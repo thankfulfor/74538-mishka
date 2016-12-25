@@ -1,3 +1,5 @@
+@import url('vars.css');
+
 .modal {
     background-color: rgba(255,255,255,.9);
     bottom: 0;
@@ -23,10 +25,24 @@
         text-align: center;
         vertical-align: middle;
         width: 320px;
+
+        @media all and (min-width: 768px) {
+            width: 568px;
+        }
+
     }
 
     &__header {
+        font-size: $title-font-size-xs;
+        font-weight: $font-weight-bold;
+        line-height: $title-line-height-xs;
         margin-bottom: 25px;
+        text-transform: uppercase;
+
+        @media all and (min-width: 768px) {
+            font-size: 30px;
+            line-height: $title-line-height-l;
+        }
     }
 
     &__subhead {
@@ -38,6 +54,10 @@
         justify-content: space-between;
         margin-bottom: 31px;
         width: 100%;
+
+        @media all and (min-width: 768px) {
+            justify-content: center;
+        }
     }
 
     &__option {
@@ -49,12 +69,30 @@
         vertical-align: middle;
         width: 80px;
 
+        @media all and (min-width: 768px) {
+            height: 52px;
+            width: 112px;
+        }
+
         &:hover {
             border-color: #c7c7c7;
         }
 
         &:active {
             border-color: $accent-color;
+        }
+    }
+
+    &__option + &__option {
+        @media all and (min-width: 768px) {
+            margin-left: 10px;
+        }
+    }
+
+    &__button {
+        @media all and (min-width: 768px) {
+            margin: 0 auto;
+            width: 358px;
         }
     }
 }
