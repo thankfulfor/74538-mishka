@@ -2261,14 +2261,14 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
             flex-direction: column;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        padding: 0 40px 45px;
+        padding: 0 27px 45px 40px;
         margin-top: 50px;
         margin-bottom: 65px;
     }
 }
 @media all and (min-width: 1150px) {
     .production {
-        padding: 45px 0 50px 754px;
+        padding: 55px 0 51px 760px;
         margin-bottom: 105px;
         display: block;
         position: relative;
@@ -2290,6 +2290,7 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
     .production__title {
         font-size: 20px;
         left: 0;
+        margin-top: 0;
         padding-left: 63px;
         width: auto;
     }
@@ -2299,7 +2300,7 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
 }
 @media all and (min-width: 1150px) {
     .production__title {
-        margin-bottom: 40px;
+        margin-bottom: 35px;
         padding: 40px 0 0;
         width: 140px;
     }
@@ -2324,7 +2325,7 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
 @media all and (min-width: 1150px) {
     .production__titleIcon {
         margin-left: 0;
-        top: 0;
+        top: -12px;
         left: 0;
     }
 }
@@ -2343,7 +2344,7 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
 @media all and (min-width: 1150px) {
     .production__previewContainer {
         left: 0;
-        margin: 0 80px 0 0;
+        margin: 0;
         position: absolute;
         top: 0;
         width: 685px;
@@ -2383,7 +2384,7 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
 }
 @media all and (min-width: 1150px) {
     .production__text {
-        margin-bottom: 60px;
+        margin-bottom: 46px;
         width: 230px;
     }
 }
