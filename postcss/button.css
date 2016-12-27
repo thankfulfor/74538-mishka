@@ -6,16 +6,21 @@
     font-size: $button-font-size;
     font-weight: $font-weight-bold;
     min-height: 50px;
-    padding: 12px 0 10px;
+    padding: 10px 0 10px;
     line-height: $button-font-size;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
 
+    a& {
+      padding: 14px 0 10px;
+    }
+
     &:hover,
     &:focus {
         background-color: $main-color;
         color: #fff;
+        text-decoration: none;
     }
 
     &:active {

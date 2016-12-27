@@ -48,7 +48,7 @@
         @media all and (min-width: 768px) {
             display: flex;
             flex-wrap: wrap;
-            padding: 58px 0 52px 9px;
+            padding: 58px 0 52px 0;
         }
 
         @media all and (min-width: 1150px) {
@@ -60,35 +60,28 @@
 
     &__fieldset--color {
         @media all and (min-width: 768px) {
-            padding: 50px 0 52px 9px;
+            padding: 50px 0 52px 0;
         }
     }
 
-    &__fieldset--initials {
+    &__fieldset--long {
         @media all and (min-width: 768px) {
-            padding: 63px 0 52px;
-        }
-    }
-
-    &__fieldset--phone {
-        @media all and (min-width: 768px) {
+            padding: 60px 0 52px;
             width: 676px;
         }
-
         @media all and (min-width: 1150px) {
             width: 820px;
-            margin-left: 61px;
-            padding-top: 61px;
         }
     }
 
     &__fieldset--additional {
         @media all and (min-width: 768px) {
-            padding: 48px 0 53px 9px;
+            padding: 48px 0 53px 0;
+            flex-wrap: nowrap;
         }
 
         @media all and (min-width: 1150px) {
-            padding: 48px 0 51px 9px;
+            padding: 48px 0 51px 0;
         }
     }
 
@@ -360,7 +353,7 @@
             margin-top: 30px;
 
             @media all and (min-width: 768px) {
-                margin-top: 38px;
+                margin-top: 33px;
             }
         }
 
@@ -422,11 +415,10 @@
         @media all and (min-width: 1150px) {
             flex-basis: 700px;
         }
-
-        &:nth-child(4) {
-            @media all and (min-width: 768px) {
-                margin-top: 38px;
-            }
+    }
+    &__row--email {
+        @media all and (min-width: 768px) {
+            margin-top: 32px;
         }
     }
 

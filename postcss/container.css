@@ -5,48 +5,14 @@
     width: 320px;
 
     @media all and (min-width: 768px) {
-        padding-left: 54px;
-        padding-right: 41px;
-        width: 750px; /* Такое число выбрано неслучайно: в периоде от 761 до 782 добавляется верт.скролл и ширина этого скролла создает горизонтальный скролл */
-    }
-
-    @media all and (min-width: 1150px) {
-        padding-left: 42px;
-        padding-right: 42px;
-        width: 1134px; /* Такое число выбрано неслучайно: в периоде от 1150 до 1164 добавляется верт.скролл и ширина этого скролла создает горизонтальный скролл */
-    }
-}
-
-.container--simpleTitle {
-    @media all and (min-width: 768px) {
-        padding-left: 48px;
-    }
-
-    @media all and (min-width: 1150px) {
-        padding-left: 56px;
-    }
-}
-
-.container--form {
-    @media all and (min-width: 768px) {
-        padding-left: 41px;
-        padding-right: 34px;
-    }
-
-    @media all and (min-width: 1150px) {
-        padding-left: 42px;
-        padding-right: 42px;
-    }
-}
-
-.container--footer {
-    @media all and (min-width: 768px) {
-        padding-left: 48px;
-        padding-right: 34px;
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 100%;
     }
 
     @media all and (min-width: 1150px) {
         padding-left: 50px;
-        padding-right: 37px;
+        padding-right: 50px;
+        width: 100%;
     }
 }

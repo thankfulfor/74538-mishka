@@ -79,7 +79,7 @@
 
         @media all and (min-width: 768px) {
             height: 455px;
-            margin: 0 0 40px -40px;
+            margin: 0 0 0 -40px;
             order: -1;
             width: 668px;
         }
