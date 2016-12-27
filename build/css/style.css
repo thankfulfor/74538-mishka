@@ -363,6 +363,11 @@ a.button {
         margin-top: 70px;
     }
 }
+@media all and (min-width: 1150px) {
+    .catalog {
+        margin-top: 60px;
+    }
+}
 .catalog__items {}
 @media all and (min-width: 1150px) {
     .catalog__items {
@@ -446,13 +451,14 @@ a.button {
 @media all and (min-width: 768px) {
     .catalog__name {
         font-size: 20px;
-        margin-bottom: 7px;
+        margin-bottom: 0;
     }
 }
 @media all and (min-width: 1150px) {
     .catalog__name {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
+        margin-bottom: 7px;
     }
 }
 .catalog__text {
@@ -460,6 +466,12 @@ a.button {
     line-height: 30px;
 }
 @media all and (min-width: 768px) {
+    .catalog__text {
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+}
+@media all and (min-width: 1150px) {
     .catalog__text {
         font-size: 15px;
         padding-bottom: 30px;
@@ -477,7 +489,7 @@ a.button {
 @media all and (min-width: 768px) {
     .catalog__buy {
         margin-top: auto;
-        padding-top: 22px;
+        padding-top: 20px;
     }
 }
 @media all and (min-width: 1150px) {
@@ -486,6 +498,7 @@ a.button {
             align-self: flex-end;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
+        padding-top: 22px;
         margin-top: inherit;
     }
 }
@@ -2101,7 +2114,7 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
     .pageHeader__wave {
         background: url(../img/bg-zigzag-fill.svg) center bottom;
         background-repeat: repeat-x;
-        background-size: 121%;
+        background-size: auto;
         bottom: -17px;
         height: 84px;
         left: 0;
@@ -2262,13 +2275,13 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         padding: 0 27px 45px 40px;
-        margin-top: 50px;
+        margin-top: 57px;
         margin-bottom: 65px;
     }
 }
 @media all and (min-width: 1150px) {
     .production {
-        padding: 55px 0 51px 760px;
+        padding: 55px 0 60px 760px;
         margin-bottom: 105px;
         display: block;
         position: relative;
@@ -2290,9 +2303,10 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
     .production__title {
         font-size: 20px;
         left: 0;
-        margin-top: 0;
+        margin-top: 35px;
         padding-left: 63px;
         width: auto;
+        margin-bottom: 35px;
     }
     .production__title::before {
         top: -6px;
@@ -2301,6 +2315,7 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
 @media all and (min-width: 1150px) {
     .production__title {
         margin-bottom: 35px;
+        margin-top: 0;
         padding: 40px 0 0;
         width: 140px;
     }

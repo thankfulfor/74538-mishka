@@ -8,6 +8,10 @@
       margin-top: 70px;
     }
 
+    @media all and (min-width: 1150px) {
+      margin-top: 60px;
+    }
+
     &__items {
         @media all and (min-width: 1150px) {
             display: flex;
@@ -76,11 +80,12 @@
 
         @media all and (min-width: 768px) {
             font-size: $item-title-font-size-m;
-            margin-bottom: 7px;
+            margin-bottom: 0;
         }
 
         @media all and (min-width: 1150px) {
             flex: 0 0 100%;
+            margin-bottom: 7px;
         }
     }
 
@@ -89,6 +94,11 @@
         line-height: $desciption-line-height;
 
         @media all and (min-width: 768px) {
+            font-size: $desciption-font-size-m;
+            padding-bottom: 20px;
+        }
+
+        @media all and (min-width: 1150px) {
             font-size: $desciption-font-size-m;
             padding-bottom: 30px;
         }
@@ -103,12 +113,13 @@
 
         @media all and (min-width: 768px) {
             margin-top: auto;
-            padding-top: 22px;
+            padding-top: 20px;
         }
 
         @media all and (min-width: 1150px) {
             align-self: flex-end;
             flex: 0 0 100%;
+            padding-top: 22px;
             margin-top: inherit;
         }
     }

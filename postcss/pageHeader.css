@@ -8,7 +8,7 @@
         @media all and (min-width: 768px) {
             background: url(../img/bg-zigzag-fill.svg) center bottom;
             background-repeat: repeat-x;
-            background-size: 121%;
+            background-size: auto;
             bottom: -17px;
             height: 84px;
             left: 0;
