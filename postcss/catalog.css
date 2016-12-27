@@ -11,7 +11,7 @@
     &__items {
         @media all and (min-width: 1150px) {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
         }
     }
 
@@ -38,8 +38,14 @@
 
     &__imageContainer {
         @media all and (min-width: 768px) {
-            flex: 0 0 335px;
-            height: 335px;
+            flex: 0 0 334px;
+            height: 334px;
+            overflow: hidden;
+        }
+
+        @media all and (min-width: 1150px) {
+            flex: 0 0 460px;
+            height: 460px;
             overflow: hidden;
         }
     }
@@ -51,7 +57,7 @@
             display: flex;
             flex-direction: column;
             flex-grow: 1;
-            padding: 27px 31px 27px 25px;
+            padding: 23px 31px 27px 29px;
         }
 
         @media all and (min-width: 1150px) {
@@ -97,6 +103,7 @@
 
         @media all and (min-width: 768px) {
             margin-top: auto;
+            padding-top: 22px;
         }
 
         @media all and (min-width: 1150px) {

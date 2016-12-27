@@ -45,7 +45,7 @@
 
         @media all and (min-width: 768px) {
             order: -2;
-            margin-bottom: 55px;
+            margin-bottom: 49px;
         }
 
         @media all and (min-width: 1150px) {
@@ -71,7 +71,8 @@
         margin-top: 40px;
 
         @media all and (min-width: 768px) {
-            margin-top: 70px;
+            margin-top: 54px;
+            margin-bottom: 4px;
         }
 
         @media all and (min-width: 1150px) {
@@ -86,9 +87,9 @@
         margin: 40px 0 40px;
 
         @media all and (min-width: 768px) {
-            bottom: 20px;
+            bottom: 14px;
             position: absolute;
-            right: 30px;
+            right: -14px;
             width: 165px;
         }
 
@@ -132,6 +133,7 @@
         @media all and (min-width: 768px) {
             order: -1;
             width: 175px;
+            margin-right: -19px;
         }
         @media all and (min-width: 1150px) {
             margin-top: 10px;
