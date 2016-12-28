@@ -92,10 +92,12 @@
         @media all and (min-width: 768px) {
             padding: 48px 0 53px 0;
             flex-wrap: nowrap;
+            width: 665px;
         }
 
         @media all and (min-width: 1150px) {
             padding: 48px 0 52px 0;
+            width: 811px;
         }
     }
 
@@ -386,7 +388,7 @@
             margin-top: 30px;
 
             @media all and (min-width: 768px) {
-                margin-top: 35px;
+                margin-top: 31px;
             }
 
             @media all and (min-width: 1150px) {

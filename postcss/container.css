@@ -16,3 +16,19 @@
         width: 1130px;
     }
 }
+
+.container--production {
+    @media all and (min-width: 768px) {
+        padding-right: 29px;
+    }
+
+    @media all and (min-width: 1150px) {
+        padding-right: 35px;
+    }
+}
+
+.container--catalog {
+    @media all and (min-width: 1150px) {
+        padding-right: 35px;
+    }
+}
