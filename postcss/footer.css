@@ -11,7 +11,7 @@
             align-items: center;
             display: flex;
             justify-content: space-between;
-            padding: 54px 0 41px;
+            padding: 48px 0 41px;
         }
 
         @media all and (min-width: 1150px) {
@@ -21,8 +21,6 @@
 
     &__logo {
         display: none;
-
-
 
         path {
             fill: #000;
