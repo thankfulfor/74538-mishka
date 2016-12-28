@@ -6,14 +6,14 @@
     padding-top: 35px;
 
     @media all and (min-width: 768px) {
-        padding-top: 55px;
-        padding-bottom: 80px;
+        padding-top: 36px;
+        padding-bottom: 87px;
     }
 
     @media all and (min-width: 1150px) {
-        padding-left: 175px;
-        padding-top: 73px;
-        padding-bottom: 103px;
+        padding-left: 172px;
+        padding-top: 64px;
+        padding-bottom: 91px;
     }
 
     &__list {
@@ -41,15 +41,18 @@
 
         @media all and (min-width: 768px) {
             font-size: 20px;
+            line-height: 29px;
             margin-top: 52px;
             padding-right: 35px;
-            width: 330px;
+            width: 334px;
         }
 
         @media all and (min-width: 1150px) {
-            padding-right: 55px;
-            padding-left: 7px;
-            width: 355px;
+            line-height: 33px;
+            margin-top: 45px;
+            padding-left: 3px;
+            padding-right: 53px;
+            width: 350px;
         }
     }
 
@@ -62,36 +65,38 @@
     &__item:nth-child(2) {
         @media all and (min-width: 768px) {
             order: 3;
+            margin-top: 58px;
         }
     }
 
     &__item:nth-child(3) {
         @media all and (min-width: 768px) {
-            order: 6;
+            order: 5;
+            margin-top: 63px;
         }
     }
 
     &__item:nth-child(4) {
         @media all and (min-width: 768px) {
             order: 2;
+            margin-top: 53px;
+        }
+        @media all and (min-width: 1150px) {
+            margin-top: 49px;
         }
     }
 
     &__item:nth-child(5) {
         @media all and (min-width: 768px) {
             order: 4;
+            margin-top: 54px;
         }
     }
 
     &__item:nth-child(6) {
         @media all and (min-width: 768px) {
             order: 6;
-        }
-    }
-
-    &__item + &__item {
-        @media all and (min-width: 768px) {
-            margin-top: 55px;
+            margin-top: 63px;
         }
     }
 

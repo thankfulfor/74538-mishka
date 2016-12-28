@@ -1,3 +1,15 @@
 .divider {
+    display: none;
     background-color: $divider-color;
+
+    @media all and (min-width: 768px) {
+        background: url(../img/bg-zigzag-line.svg) center bottom no-repeat;
+        background-size: contain;
+        display: block;
+        height: 23px;
+    }
+
+    &--indent {
+        padding-top: 82px;
+    }
 }

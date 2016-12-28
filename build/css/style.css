@@ -125,16 +125,16 @@ body {
 
 @media all and (min-width: 768px) {
     .aboutUs {
-        padding-top: 55px;
-        padding-bottom: 80px;
+        padding-top: 36px;
+        padding-bottom: 87px;
     }
 }
 
 @media all and (min-width: 1150px) {
     .aboutUs {
-        padding-left: 175px;
-        padding-top: 73px;
-        padding-bottom: 103px;
+        padding-left: 172px;
+        padding-top: 64px;
+        padding-bottom: 91px;
     }
 }
 
@@ -172,17 +172,20 @@ body {
 @media all and (min-width: 768px) {
     .aboutUs__item {
         font-size: 20px;
+        line-height: 29px;
         margin-top: 52px;
         padding-right: 35px;
-        width: 330px;
+        width: 334px;
     }
 }
 
 @media all and (min-width: 1150px) {
     .aboutUs__item {
-        padding-right: 55px;
-        padding-left: 7px;
-        width: 355px;
+        line-height: 33px;
+        margin-top: 45px;
+        padding-left: 3px;
+        padding-right: 53px;
+        width: 350px;
     }
 }
 
@@ -201,6 +204,7 @@ body {
     .aboutUs__item:nth-child(2) {
         -ms-flex-order: 3;
             order: 3;
+        margin-top: 58px;
     }
 }
 
@@ -208,8 +212,9 @@ body {
 
 @media all and (min-width: 768px) {
     .aboutUs__item:nth-child(3) {
-        -ms-flex-order: 6;
-            order: 6;
+        -ms-flex-order: 5;
+            order: 5;
+        margin-top: 63px;
     }
 }
 
@@ -219,6 +224,13 @@ body {
     .aboutUs__item:nth-child(4) {
         -ms-flex-order: 2;
             order: 2;
+        margin-top: 53px;
+    }
+}
+
+@media all and (min-width: 1150px) {
+    .aboutUs__item:nth-child(4) {
+        margin-top: 49px;
     }
 }
 
@@ -228,6 +240,7 @@ body {
     .aboutUs__item:nth-child(5) {
         -ms-flex-order: 4;
             order: 4;
+        margin-top: 54px;
     }
 }
 
@@ -237,14 +250,7 @@ body {
     .aboutUs__item:nth-child(6) {
         -ms-flex-order: 6;
             order: 6;
-    }
-}
-
-.aboutUs__item + .aboutUs__item {}
-
-@media all and (min-width: 768px) {
-    .aboutUs__item + .aboutUs__item {
-        margin-top: 55px;
+        margin-top: 63px;
     }
 }
 
@@ -564,7 +570,7 @@ a.button {
 }
 @media all and (min-width: 768px) {
     .contacts {
-        padding-top: 130px;
+        padding-top: 60px;
         padding-bottom: 55px;
     }
 }
@@ -572,7 +578,7 @@ a.button {
     .contacts {
         min-height: 630px;
         padding-bottom: 100px;
-        padding-top: 223px;
+        padding-top: 146px;
         position: relative;
     }
 }
@@ -592,7 +598,7 @@ a.button {
     .contacts__header {
         -ms-flex-pack: inherit;
             justify-content: inherit;
-        margin-bottom: 31px;
+        margin-bottom: 33px;
     }
 }
 .contacts__flag {
@@ -604,6 +610,7 @@ a.button {
         display: block;
         height: 82px;
         width: 47px;
+        margin-top: -15px;
     }
 }
 @media all and (min-width: 1150px) {
@@ -693,17 +700,17 @@ a.button {
 @media all and (min-width: 768px) {
     .contacts__mapContainer {
         height: 460px;
-        margin: 40px -50px 0 -50px;
+        margin: 58px -50px 0 -50px;
         overflow: hidden;
         text-align: center;
     }
 }
 @media all and (min-width: 1150px) {
     .contacts__mapContainer {
-        height: 456px;
+        height: 459px;
         position: absolute;
-        right: 50px;
-        top: 115px;
+        right: 35px;
+        top: 18px;
         width: 526px;
     }
 }
@@ -729,13 +736,14 @@ a.button {
 }
 @media all and (min-width: 768px) {
     .contacts__writeUs {
-        margin: 40px auto 0;
+        margin: 53px auto 0 220px;
         width: 230px;
     }
 }
 @media all and (min-width: 1150px) {
     .contacts__writeUs {
         margin-top: 80px;
+        margin: 80px auto 0;
     }
 }
 .container {
@@ -806,7 +814,19 @@ a.button {
     }
 }
 .divider {
+    display: none;
     background-color: #e7e7e8;
+}
+@media all and (min-width: 768px) {
+    .divider {
+        background: url(../img/bg-zigzag-line.svg) center bottom no-repeat;
+        background-size: contain;
+        display: block;
+        height: 23px;
+    }
+}
+.divider--indent {
+    padding-top: 82px;
 }
 .explain {
     background-color: #fff;
@@ -1503,13 +1523,13 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
 }
 @media all and (min-width: 768px) {
     .header__logo {
-        margin-left: 6px;
+        margin-left: 0;
         margin-top: 22px;
     }
 }
 @media all and (min-width: 1150px) {
     .header__logo {
-        margin-left: 458px;
+        margin-left: 451px;
         margin-top: 8px;
     }
 }
@@ -1618,7 +1638,7 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
         height: 60px;
         line-height: 60px;
         margin-top: 88px;
-        padding-left: 6px;
+        padding-left: 0;
         width: 200px;
     }
 }
@@ -1627,21 +1647,21 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
         height: 90px;
         line-height: 90px;
         margin-top: 0;
-        padding-left: 7px;
-        width: 191px;
+        width: 184px;
     }
 }
 .header__item:nth-child(2) {}
 @media all and (min-width: 768px) {
     .header__item:nth-child(2) {
-        padding-left: 13px;
+        padding-left: 2px;
+        width: 190px;
     }
 }
 @media all and (min-width: 1150px) {
     .header__item:nth-child(2) {
         border-left: 1px solid #ececec;
-        margin-right: auto;
-        padding-left: 34px;
+        margin-right: 303px;
+        padding-left: 26px;
         line-height: 85px;
         width: 200px;
     }
@@ -1663,14 +1683,15 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
     .header__item:nth-child(4) {
         border: 0;
         height: 90px;
-        line-height: 87px;
-        padding-left: 85px;
+        line-height: 86px;
+        padding-left: 83px;
         width: 313px;
     }
 }
 @media all and (min-width: 1150px) {
     .header__item:nth-child(4) {
         width: 267px;
+        padding-left: 77px;
     }
 }
 .header__link {
@@ -1718,9 +1739,16 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
 .header__itemIcon:active path {
     fill: #d0f1ea;
 }
+@media all and (min-width: 768px) {
+    .header__itemIcon {
+        top: 4px;
+        left: 31px;
+    }
+}
 @media all and (min-width: 1150px) {
     .header__itemIcon {
-        top: 3px;
+        top: 5px;
+        left: 30px;
     }
 }
 .header__searchText {}
@@ -1737,13 +1765,13 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
         display: block;
         font-size: 15px;
         margin-right: -16px;
-        margin-top: 110px;
+        margin-top: 109px;
         width: 231px;
     }
 }
 @media all and (min-width: 1150px) {
     .header__freeDeliver {
-        margin-right: -6px;
+        margin-right: -15px;
         margin-top: 108px;
     }
 }
@@ -1754,13 +1782,13 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
     .header__itemDesktop {
         display: block;
         position: absolute;
-        left: 8px;
+        left: 0;
         top: 107px;
         width: 160px;
     }
 }
 .header__itemDesktop--sale {
-    left: 226px;
+    left: 219px;
 }
 .container {
     margin: 0 auto;
@@ -1800,7 +1828,7 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
 @media all and (min-width: 1150px) {
     .itemOfWeek {
         min-height: 760px;
-        padding-bottom: 85px;
+        padding-bottom: 70px;
         padding-top: 124px;
     }
 }
@@ -1820,7 +1848,7 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
         -ms-flex-pack: inherit;
             justify-content: inherit;
         margin-bottom: 0;
-        padding-left: 55px;
+        padding-left: 48px;
     }
 }
 .itemOfWeek__title {}
@@ -1844,9 +1872,9 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
 }
 @media all and (min-width: 768px) {
     .itemOfWeek__subtitle {
-        margin-top: 17px;
+        margin-top: 16px;
         text-align: center;
-        padding-right: 27px;
+        padding-right: 24px;
     }
 }
 @media all and (min-width: 768px) {
@@ -1862,7 +1890,7 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
 }
 @media all and (min-width: 1150px) {
     .itemOfWeek__content {
-        padding-left: 183px;
+        padding-left: 176px;
         margin-top: 50px;
     }
 }
@@ -1924,7 +1952,7 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
         height: 400px;
         margin-top: 0;
         position: absolute;
-        right: 0;
+        right: -16px;
         top: 151px;
         width: 335px;
     }
@@ -1932,7 +1960,7 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
 @media all and (min-width: 1150px) {
     .itemOfWeek__imageContainer {
         height: 630px;
-        right: -7px;
+        right: -14px;
         top: 72px;
         width: 525px;
         z-index: -1;
@@ -1948,13 +1976,13 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
 @media all and (min-width: 768px) {
     .itemOfWeek__price {
         font-size: 20px;
-        margin: 60px 0 35px;
+        margin: 60px 0 31px;
         width: 290px;
     }
 }
 @media all and (min-width: 1150px) {
     .itemOfWeek__price {
-        margin: 113px 0 34px;
+        margin: 109px 0 34px;
     }
 }
 .itemOfWeek__orderButton {
@@ -2167,12 +2195,7 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
     .pageHeader__header {
         margin: 0 auto;
         max-width: 668px;
-        padding: 0 78px;
-    }
-}
-@media all and (min-width: 1150px) {
-    .pageHeader__header {
-        padding: 0;
+        padding-left: 5px;
     }
 }
 .pageHeader--pad {
@@ -2189,7 +2212,12 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
         -ms-flex-pack: center;
             justify-content: center;
         margin: 0;
-        width: 100%;
+        width: 668px;
+    }
+}
+@media all and (min-width: 1150px) {
+    .pageHeader__items {
+        width: 1050px;
     }
 }
 .pageHeader__item {
@@ -2237,6 +2265,12 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
     font-size: 18px;
     font-weight: 700;
     width: 160px;
+}
+@media all and (min-width: 768px) {
+    .pageHeader__text {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 .pageHeader__item:active .pageHeader__text {
     opacity: 0.3;
@@ -2442,22 +2476,23 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
 }
 @media all and (min-width: 768px) {
     .review {
+        -ms-flex-align: start;
+            align-items: flex-start;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         -ms-flex-pack: justify;
             justify-content: space-between;
+        padding-bottom: 44px;
         padding-top: 80px;
         position: relative;
-        -ms-flex-align: start;
-            align-items: flex-start;
     }
 }
 @media all and (min-width: 1150px) {
     .review {
         padding-top: 70px;
-        padding-bottom: 105px;
+        padding-bottom: 97px;
         padding-left: 175px;
     }
 }
@@ -2516,13 +2551,12 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
 @media all and (min-width: 768px) {
     .review__author {
         margin-top: 54px;
-        margin-bottom: 4px;
+        margin-bottom: 0;
     }
 }
 @media all and (min-width: 1150px) {
     .review__author {
         margin-top: 35px;
-        margin-bottom: 6px;
     }
 }
 .review__arrows {
@@ -2532,16 +2566,16 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
 }
 @media all and (min-width: 768px) {
     .review__arrows {
-        bottom: 14px;
+        bottom: 9px;
         position: absolute;
         right: -14px;
-        width: 165px;
+        width: 173px;
     }
 }
 @media all and (min-width: 1150px) {
     .review__arrows {
-        bottom: 65px;
-        right: 0;
+        bottom: 60px;
+        right: -16px;
         width: 175px;
     }
 }
@@ -2576,7 +2610,7 @@ input[type="radio"]:checked ~ .form__radio::before, input[type="checkbox"]:check
         -ms-flex-order: -1;
             order: -1;
         width: 175px;
-        margin-right: -19px;
+        margin-right: -15px;
     }
 }
 @media all and (min-width: 1150px) {

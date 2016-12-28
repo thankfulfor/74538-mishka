@@ -5,17 +5,18 @@
     padding-top: 30px;
 
     @media all and (min-width: 768px) {
+        align-items: flex-start;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        padding-bottom: 44px;
         padding-top: 80px;
         position: relative;
-        align-items: flex-start;
     }
 
     @media all and (min-width: 1150px) {
         padding-top: 70px;
-        padding-bottom: 105px;
+        padding-bottom: 97px;
         padding-left: 175px;
     }
 
@@ -72,12 +73,11 @@
 
         @media all and (min-width: 768px) {
             margin-top: 54px;
-            margin-bottom: 4px;
+            margin-bottom: 0;
         }
 
         @media all and (min-width: 1150px) {
             margin-top: 35px;
-            margin-bottom: 6px;
         }
     }
 
@@ -87,15 +87,15 @@
         margin: 40px 0 40px;
 
         @media all and (min-width: 768px) {
-            bottom: 14px;
+            bottom: 9px;
             position: absolute;
             right: -14px;
-            width: 165px;
+            width: 173px;
         }
 
         @media all and (min-width: 1150px) {
-            bottom: 65px;
-            right: 0;
+            bottom: 60px;
+            right: -16px;
             width: 175px;
         }
     }
@@ -133,7 +133,7 @@
         @media all and (min-width: 768px) {
             order: -1;
             width: 175px;
-            margin-right: -19px;
+            margin-right: -15px;
         }
         @media all and (min-width: 1150px) {
             margin-top: 10px;
