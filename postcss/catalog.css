@@ -100,7 +100,7 @@
 
         @media all and (min-width: 1150px) {
             font-size: $desciption-font-size-m;
-            padding-bottom: 30px;
+            padding-bottom: 12px;
         }
     }
 
