@@ -81,6 +81,8 @@
         @media all and (min-width: 768px) {
             font-size: $item-title-font-size-m;
             margin-bottom: 0;
+            width: 250px;
+            -ms-word-wrap: break-word;
         }
 
         @media all and (min-width: 1150px) {
