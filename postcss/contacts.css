@@ -6,14 +6,14 @@
     padding-bottom: 40px;
 
     @media all and (min-width: 768px) {
-        padding-top: 130px;
+        padding-top: 60px;
         padding-bottom: 55px;
     }
 
     @media all and (min-width: 1150px) {
         min-height: 630px;
         padding-bottom: 100px;
-        padding-top: 223px;
+        padding-top: 146px;
         position: relative;
     }
 
@@ -28,7 +28,7 @@
 
         @media all and (min-width: 1150px) {
             justify-content: inherit;
-            margin-bottom: 31px;
+            margin-bottom: 33px;
         }
     }
 
@@ -40,6 +40,7 @@
             display: block;
             height: 82px;
             width: 47px;
+            margin-top: -15px;
         }
 
         @media all and (min-width: 1150px) {
@@ -132,16 +133,16 @@
 
         @media all and (min-width: 768px) {
             height: 460px;
-            margin: 40px -50px 0 -50px;
+            margin: 58px -50px 0 -50px;
             overflow: hidden;
             text-align: center;
         }
 
         @media all and (min-width: 1150px) {
-            height: 456px;
+            height: 459px;
             position: absolute;
-            right: 50px;
-            top: 115px;
+            right: 35px;
+            top: 18px;
             width: 526px;
         }
     }
@@ -167,12 +168,13 @@
         margin-top: 40px;
 
         @media all and (min-width: 768px) {
-            margin: 40px auto 0;
+            margin: 53px auto 0 220px;
             width: 230px;
         }
 
         @media all and (min-width: 1150px) {
             margin-top: 80px;
+            margin: 80px auto 0;
         }
     }
 }
