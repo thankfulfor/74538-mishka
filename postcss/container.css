@@ -7,12 +7,12 @@
     @media all and (min-width: 768px) {
         padding-left: 50px;
         padding-right: 50px;
-        width: 100%;
+        width: 748px;
     }
 
     @media all and (min-width: 1150px) {
         padding-left: 50px;
         padding-right: 50px;
-        width: 100%;
+        width: 1130px;
     }
 }

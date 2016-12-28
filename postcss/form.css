@@ -21,11 +21,11 @@
         @media all and (min-width: 768px) {
             font-size: $main-font-size-m;
             line-height: $main-line-height-m;
-            padding-left: 8px;
+            margin-left: -3px;
         }
 
         @media all and (min-width: 1150px) {
-            padding-left: 180px;
+            padding-left: 173px;
             padding-right: 150px;
         }
     }
@@ -52,7 +52,7 @@
         }
 
         @media all and (min-width: 1150px) {
-            margin-left: 66px;
+            margin-left: 60px;
             padding-top: 58px;
             padding-bottom: 50px;
         }
@@ -60,14 +60,28 @@
 
     &__fieldset--color {
         @media all and (min-width: 768px) {
-            padding: 50px 0 52px 0;
+            padding: 51px 0 52px 0;
+        }
+        @media all and (min-width: 1150px) {
+            padding: 51px 0 52px 0;
+            margin-left: 58px;
         }
     }
 
-    &__fieldset--long {
+    &__fieldset--initials {
+        @media all and (min-width: 768px) {
+            padding: 58px 0 52px;
+            width: 668px;
+        }
+        @media all and (min-width: 1150px) {
+            width: 820px;
+        }
+    }
+
+    &__fieldset--contacts {
         @media all and (min-width: 768px) {
             padding: 60px 0 52px;
-            width: 676px;
+            width: 668px;
         }
         @media all and (min-width: 1150px) {
             width: 820px;
@@ -81,7 +95,7 @@
         }
 
         @media all and (min-width: 1150px) {
-            padding: 48px 0 51px 0;
+            padding: 48px 0 52px 0;
         }
     }
 
@@ -97,7 +111,7 @@
         }
 
         @media all and (min-width: 1150px) {
-            flex-basis: 108px;
+            flex-basis: 113px;
             padding-top: 0;
         }
     }
@@ -116,15 +130,19 @@
 
     &__titleBlock--initials {
         @media all and (min-width: 768px) {
-            padding-left: 7px;
-            flex-basis: 174px;
+            padding-left: 0;
+            flex-basis: 166px;
         }
 
         @media all and (min-width: 1150px) {
-            flex-basis: 119px;
+            flex-basis: 115px;
             padding-left: 2px;
-            padding-top: 4px;
+            padding-top: 5px;
         }
+    }
+
+    &__titleBlock--additional {
+        padding-top: 0;
     }
 
     &__titleBlock--additional {
@@ -164,12 +182,27 @@
         align-items: center;
     }
 
-    &__radioOption + &__radioOption,
+    &__radioOption + &__radioOption {
+        margin-top: 22px;
+
+        @media all and (min-width: 768px) {
+            margin-top: 24px;
+        }
+
+        @media all and (min-width: 768px) {
+            margin-top: 26px;
+        }
+    }
+
     &__checkboxOption + &__checkboxOption {
         margin-top: 22px;
 
         @media all and (min-width: 768px) {
-            margin-top: 25px;
+            margin-top: 24px;
+        }
+
+        @media all and (min-width: 768px) {
+            margin-top: 26px;
         }
     }
 
@@ -240,11 +273,11 @@
             display: flex;
             flex-wrap: wrap;
             max-height: 210px;
-            width: 485px;
+            width: 473px;
         }
 
         @media all and (min-width: 1150px) {
-            width: 860px;
+            width: 800px;
         }
     }
 
@@ -353,7 +386,11 @@
             margin-top: 30px;
 
             @media all and (min-width: 768px) {
-                margin-top: 33px;
+                margin-top: 35px;
+            }
+
+            @media all and (min-width: 1150px) {
+                margin-top: 32px;
             }
         }
 
@@ -361,11 +398,11 @@
     &__initialsBlock:nth-child(4) {
 
         @media all and (min-width: 768px) {
-            margin-left: 174px;
+            margin-left: 165px;
         }
 
         @media all and (min-width: 1150px) {
-            margin-left: 118px;
+            margin-left: 114px;
         }
     }
 
@@ -391,7 +428,11 @@
         width: 100%;
 
         @media all and (min-width: 768px) {
-            padding-left: 15px;
+            padding-left: 12px;
+        }
+
+        @media all and (min-width: 1150px) {
+            padding-bottom: 15px;
         }
 
         &:hover,
@@ -402,6 +443,12 @@
 
         &--withIcon {
             padding-right: 65px;
+        }
+    }
+
+    &__title--contacts {
+        @media all and (min-width: 1150px) {
+            padding-top: 6px;
         }
     }
 
@@ -416,9 +463,14 @@
             flex-basis: 700px;
         }
     }
+
     &__row--email {
         @media all and (min-width: 768px) {
-            margin-top: 32px;
+            margin-top: 33px;
+        }
+
+        @media all and (min-width: 768px) {
+            margin-top: 30px;
         }
     }
 
@@ -426,11 +478,11 @@
         margin-top: 30px;
 
         @media all and (min-width: 768px) {
-            margin-top: 35px;
+            margin-top: 32px;
         }
 
         @media all and (min-width: 1150px) {
-            margin-top: 41px;
+            margin-top: 36px;
         }
     }
 
@@ -488,13 +540,13 @@
             align-items: flex-start;
             display: flex;
             justify-content: space-between;
-            margin-left: 8px;
+            margin-left: -3px;
             max-width: 850px;
         }
 
         @media all and (min-width: 1150px) {
-            margin-left: 182px;
-            margin-right: 166px;
+            margin-left: 172px;
+            margin-right: 173px;
         }
     }
 
@@ -502,14 +554,16 @@
         margin: 20px 0 30px;
 
         @media all and (min-width: 768px) {
-            flex: 0 0 300px;
-            letter-spacing: 0.5px;
-            margin-top: 16px;
+            flex: 0 0 305px;
+            font-size: 17px;
+            line-height: 30px;
+            margin-right: -18px;
+            margin-top: 11px;
             text-align: right;
         }
 
         @media all and (min-width: 1150px) {
-            margin-top: 13px;
+            margin-top: 10px;
         }
     }
 

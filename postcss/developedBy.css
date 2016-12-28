@@ -3,6 +3,7 @@
     text-align: center;
 
     @media all and (min-width: 768px) {
+        margin-right: -19px;
         padding: 0;
     }
 
@@ -46,7 +47,8 @@
         width: 27px;
 
         @media all and (min-width: 768px) {
-          margin-left: 26px;
+            margin-left: 26px;
+            margin-top: 10px;
         }
     }
 }
